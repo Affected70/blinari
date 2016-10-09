@@ -705,11 +705,11 @@ li a:focus::after {
 }
 .accura-social-icons.accura-active-bg li a.accura-social-icon-twitter,
 .accura-social-icons.accura-colored-bg li a:hover.accura-social-icon-twitter {
-  background: #1ca3db !important;
+  background: #B338A4 !important;
 }
 .accura-social-icons.accura-active-bg li a.accura-social-icon-facebook,
 .accura-social-icons.accura-colored-bg li a:hover.accura-social-icon-facebook {
-  background: #395793 !important;
+  background: #5075A5 !important;
 }
 .accura-social-icons.accura-active-bg li a:hover.accura-social-icon-gplus {
   background: #771d15 !important;
