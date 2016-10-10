@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a2a2cd0-f3c7-4d74-b9d4-aaa61c804f50" name="Default" comment="first commit">
+    <list default="true" id="9a2a2cd0-f3c7-4d74-b9d4-aaa61c804f50" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.htm" afterPath="$PROJECT_DIR$/index.htm" />
     </list>
@@ -27,8 +27,8 @@
       <file leaf-file-name="index.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="109" column="74" selection-start-line="109" selection-start-column="74" selection-end-line="109" selection-end-column="74" />
+            <state relative-caret-position="402">
+              <caret line="161" column="111" selection-start-line="161" selection-start-column="111" selection-end-line="161" selection-end-column="111" />
               <folding />
             </state>
           </provider>
@@ -189,7 +189,7 @@
       <workItem from="1475958854428" duration="246000" />
       <workItem from="1475962086024" duration="3151000" />
       <workItem from="1476019455668" duration="2163000" />
-      <workItem from="1476108921196" duration="2236000" />
+      <workItem from="1476108921196" duration="3576000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1476020022383</created>
@@ -226,11 +226,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476021145200</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="исправленно с отображением в надписей в каждом подменю">
+      <created>1476123372527</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1476123372527</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10452000" />
+    <option name="totallyTimeSpent" value="11792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -267,7 +274,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="исправленно с отображением в надписей в каждом подменю" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправленно с отображением в надписей в каждом подменю" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -321,10 +329,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="159" column="19" selection-start-line="159" selection-start-column="19" selection-end-line="159" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="109" column="74" selection-start-line="109" selection-start-column="74" selection-end-line="109" selection-end-column="74" />
+        <state relative-caret-position="402">
+          <caret line="161" column="111" selection-start-line="161" selection-start-column="111" selection-end-line="161" selection-end-column="111" />
           <folding />
         </state>
       </provider>
