@@ -16,13 +16,13 @@
         $.mbBgndGallery.buildGallery({
             containment:"body",
             timer:750, //TODO return to 1000
-            effTimer:12500, //TODO return to 15000
+            effTimer:10000, //TODO return to 15000
             controls:false,
             grayScale:false,
             shuffle:true,
             preserveWidth:false,
             preserveTop: true,
-            effect:"zoom",
+            effect:{enter:{transform:"scale("+(1+ Math.random()*5)+")",opacity:0},exit:{transform:"scale("+(1 + Math.random()*5)+")",opacity:0}, enterTiming:"cubic-bezier(0.19, 1, 0.22, 1)", exitTiming:"cubic-bezier(0.19, 1, 0.22, 1)"},
             /* effect:{enter:{transform:"scale("+(1+ Math.random()*2)+")",opacity:0},exit:{transform:"scale("+(Math.random()*2)+")",opacity:0}},*/
 
             // If your server allow directory listing you can use:

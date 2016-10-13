@@ -275,12 +275,13 @@
     height: 85px;
     top: 0px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-    background-image: url("../../img/first.jpg");
+    background-image: url("../../img/first.png");
    /* border-radius: 0;
     border: 1px solid #fff;
     border-left: none;
     border-right: none;*/
     z-index: 999;
+    background-color: transparent; /*TODO: new row*/
 }
 
 #header {
