@@ -14,7 +14,7 @@
 .selected1 {
     text-transform: capitalize;
     color: #c96f00;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0px 12px;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 0;
@@ -275,7 +275,7 @@
     height: 85px;
     top: 0px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-    background-image: url("../../img/first.png");
+    background-image: url("../../img/top_logo.png");
    /* border-radius: 0;
     border: 1px solid #fff;
     border-left: none;
@@ -312,8 +312,11 @@
 }
 
 #mainheader .main-nav ul > li > a {
-    color: #333333;
-    font-weight: 600;
+    color: white;
+    font-weight: 800;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(196,18,48,0.3);
 }
 
 #mainheader .main-nav ul > li > a:hover, #mainheader .main-nav ul > li > a.selected {
@@ -334,7 +337,7 @@ ul.nav li a {
     text-transform: capitalize;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     color: #a6a9b9;
     width: 100%;
     letter-spacing: 0;
@@ -362,12 +365,12 @@ ul.nav li a {
     #mainheader .main-nav ul ul li a {
         padding: 12px 15px;
         color: #EFE6DD;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     #header .main-nav ul li li a {
         padding: 12px 15px;
-        font-size: 16px;
+        font-size: 18px;
         color: #EFE6DD;
     }
 

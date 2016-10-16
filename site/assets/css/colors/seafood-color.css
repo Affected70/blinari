@@ -20,6 +20,9 @@
 
 .selected1 {
     color: white;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(240, 118, 27, 0.9);
 }
 
 .selected1:hover {
@@ -183,7 +186,7 @@ border-left: 0px solid transparent;
 /* seafood.css */
 
 #mainheader .main-nav ul > li > a:hover, #mainheader .main-nav ul > li > a.selected {
-    color: white;
+    color: #F89728;
 }
 
 #header .main-nav ul > li > a:hover, #header .main-nav ul > li > a.selected {

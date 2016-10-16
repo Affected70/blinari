@@ -519,16 +519,7 @@ Horzontal settings
     padding: 0px 15px;
 }
 
-#mainheader {
-    margin: 0 auto;
-    line-height: 80px;
-    width: 100%;
-    z-index: 9999;
-    top: 0px;
-}
 
-
-/*
 #mainheader {
     margin: 0 auto;
     line-height: 80px;
@@ -538,11 +529,20 @@ Horzontal settings
     z-index: 9999;
     bottom: 15%;
 }
-*/
 
 
 #mainheader .menu-inner {
-    height: 110px;
+    height: 95px;
+    /*background-image: url("../../img/bottom_logo_30_transparency.png");*/
+    background: -moz-linear-gradient(top, rgba(196, 18, 48, 0.8) 0%, rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, rgba(196, 18, 48, 0.8) 100%), url('../../img/bottom_logo_30_transparency.png') no-repeat;
+    background: -moz-linear-gradient(top, rgba(196, 18, 48, 0.8) 0%, rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, rgba(196, 18, 48, 0.8) 100%), url('../../img/bottom_logo_30_transparency.png') no-repeat;
+    background: -webkit-linear-gradient(top, rgba(196, 18, 48, 0.8) 0%, rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, rgba(196, 18, 48, 0.8) 100%), url('../../img/bottom_logo_30_transparency.png') no-repeat;
+    background: -o-linear-gradient(top, rgba(196, 18, 48, 0.8) 0%, rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, rgba(196, 18, 48, 0.8) 100%), url('../../img/bottom_logo_30_transparency.png') no-repeat;
+    background: -ms-linear-gradient(top, rgba(196, 18, 48, 0.8) 0%, rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, rgba(196, 18, 48, 0.8) 100%), url('../../img/bottom_logo_30_transparency.png') no-repeat;
+    background: linear-gradient(top, rgba(196, 18, 48, 0.8) 0%, rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, rgba(196, 18, 48, 0.8) 100%), url('../../img/bottom_logo_30_transparency.png') no-repeat;
+
+   /* border: 1px solid white;*/
+
 }
 
 #header .brand {
