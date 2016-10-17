@@ -680,16 +680,9 @@ $('.modal').click(function() {
    video_containers.html( video_containers.html() );
 });
 
-$('.marker1').click(function()
-{
-	map.center("231","231");
-});
 
+//map click
 
-$('.marker2').click(function()
-{
-	map.center("23321","2311212");
-});
 /*   Spmenu video Stop On Click Close Button  */
 
 /******************  9. Custom  Functions Section END******************/

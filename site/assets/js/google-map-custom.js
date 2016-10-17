@@ -7,24 +7,24 @@
 
 //*********************Google MAP *********************/
 		
-		var color = "#9E2811" // google map background colour
+		var color = "#BB1616" // google map background colour
 		var saturation = 112 //
-		var mapLatitude=53.1895905
-		var mapLongitude=50.09131372//(Fist Value Latitude, Second Value ), get YOUR coordenates here!: http://itouchmap.com/latlong.html
-		var mapZoom_value=17 // Map zoom level parameter only numeric
+		var mapLatitude=53.234467
+		var mapLongitude=50.262109//(Fist Value Latitude, Second Value ), get YOUR coordenates here!: http://itouchmap.com/latlong.html
+		var mapZoom_value=12 // Map zoom level parameter only numeric
 
 
 // Google map marker example 2 locations
 		//map-marker #1
-		var marker1_Latitude=53.1898015
-		var marker1_Longitude=50.0896238
-		var marker1_content="<h2>Блинари, кафе-бистро</h2> Самарское область, Россия" // marker or  on click content (Info Window)
+		var marker1_Latitude=53.189771
+		var marker1_Longitude=50.090406
+		var marker1_content="<h2>Блинари, кафе-бистро</h2> Куйбышева, 98, Самара, Самарская обл., 443099" // marker or  on click content (Info Window)
 		var marker1_pointerUrl = 'assets/img/map-marker.png' // set your color pointer here!
 
 		//map-marker #2
-		var marker2_Latitude=53.23315402
-		var marker2_Longitude=50.18831328
-		var marker2_content="<h2>Блинари, кафе-бистро</h2>Самарское область, Россия" // marker or  on click content (Info Window)
+		var marker2_Latitude=53.232982
+		var marker2_Longitude=50.188669
+		var marker2_content="<h2>Блинари, кафе-бистро</h2>ул. Советской Армии, 235, Самара, Самарская обл., 443011" // marker or  on click content (Info Window)
 		var marker2_pointerUrl = 'assets/img/map-marker.png' // set your color pointer here!
 
 //********************* Google MAP END *********************/
@@ -107,10 +107,31 @@
 				 styles: styles
 				};
 				var map_canvas = new google.maps.Map(document.getElementById('map_canvas'), options);
-				
-			
-			
-				
+
+					$('#mapone').click(function() {
+						var location = new google.maps.LatLng('53.190255','50.094060');
+						console.log(map_canvas);
+						map_canvas.setCenter(location);
+						map_canvas.setZoom(17);
+					});
+
+					$('#maptwo').click(function() {
+						var location = new google.maps.LatLng('53.233511','50.192093');
+						console.log(map_canvas);
+						map_canvas.setCenter(location);
+						map_canvas.setZoom(17);
+					});
+					
+//	map_canvas.setCenter("53.233910,50.191160");
+//	map_canvas.setPosition("53.23315402,50.18831328");
+					
+					// $('#testMap').click(function() { //test_get Center map
+					// 	var myLat = map_canvas.getCenter().lat();
+					// 	var myLng = map_canvas.getCenter().lng();
+                    //
+					// 	console.log("myLat: " + myLat);
+					// 	console.log("myLng: " + myLng);
+					// });
 				//****************************************************************************
 		  		// marker 1 content 
 				//****************************************************************************
@@ -128,9 +149,11 @@
 				 {content:marker1_content });
 				 infowindow.open(map_canvas,marker1);
 				 });
-				// marker 1 END
+				//marker 1 END
 
-
+					var infowindow = new google.maps.InfoWindow(
+						{content:marker1_content });
+					infowindow.open(map_canvas,marker1);
 
 				//****************************************************************************
 		  		// marker 2 content 
@@ -150,13 +173,23 @@
 				 infowindow.open(map_canvas,marker2);
 				 });
 				// marker 2 END
-				
+
+					var infowindow = new google.maps.InfoWindow(
+						{content:marker2_content });
+					infowindow.open(map_canvas,marker2);
 			}
 
 				window.onload = function() {
 				 map_canvas_loaded();
 				};
+
 			/* End */
-			
+
+//map click
+
+
+
+
+
 
 //Google map end 
