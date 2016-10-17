@@ -194,10 +194,7 @@ ul.nav li a {
     width: 100%;
 }
 
-#mainheader .main-nav ul > li > a:active, #mainheader .main-nav ul > li > a:visited, #mainheader .main-nav ul > li > a:link,
-#header .main-nav ul > li > a:active, #header .main-nav ul > li > a:visited, #header .main-nav ul > li > a:link {
-    background: transparent;
-}
+
 
 @media (min-width: 992px) {
     #mainheader .main-nav ul ul li a:hover {
@@ -268,19 +265,10 @@ ul.nav li a {
         letter-spacing: 1px;
     }
 
-    #mainheader .main-nav ul > li > a {
-        padding: 33px 10px;
-        color: #454545;
-    }
+
 
     #header .main-nav ul > li > a {
         color: #656565;
-    }
-
-    #mainheader .main-nav ul > li > a:hover, #mainheader .main-nav ul > li > a.selected { /* color:#f32a2a;*/
-    }
-
-    #header .main-nav ul > li > a:hover, #header .main-nav ul > li > a.selected { /* color:#f32a2a;*/
     }
 
     #mainheader .main-nav ul ul li a {
@@ -523,3 +511,8 @@ ul.nav li a {
     }
 }
 
+/*
+#mainheader .main-nav ul > li > a:active, #mainheader .main-nav ul > li > a:visited, #mainheader .main-nav ul > li > a:link,
+#header .main-nav ul > li > a:active, #header .main-nav ul > li > a:visited, #header .main-nav ul > li > a:link {
+    background: transparent;
+}*/

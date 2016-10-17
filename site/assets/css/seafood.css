@@ -10,21 +10,7 @@
     top: 0;
 }
 
-/* Home Section First Menu Style */
-.selected1 {
-    text-transform: capitalize;
-    color: #c96f00;
-    font-size: 18px;
-    padding: 0px 12px;
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 0;
-    font-weight: 600;
-}
 
-.selected1:hover {
-    color: #c96f00;
-    cursor: pointer;
-}
 
 /* // Home Section First Menu Style */
 
@@ -311,26 +297,9 @@
     padding: 5px 0px;
 }
 
-#mainheader .main-nav ul > li > a {
-    color: white;
-    font-weight: 800;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(196,18,48,0.3);
-}
 
-#mainheader .main-nav ul > li > a:hover, #mainheader .main-nav ul > li > a.selected {
-    color: #c96f00;
-}
 
-#header .main-nav ul > li > a {
-    color: #333333;
-    font-weight: 600;
-}
 
-#header .main-nav ul > li > a:hover, #header .main-nav ul > li > a.selected {
-    color: #c96f00;
-}
 
 ul.nav li a {
     font-family: 'Quicksand', sans-serif;
@@ -385,17 +354,7 @@ ul.nav li a {
     }
 }
 
-#mainheader .main-nav ul li li a.hover, #mainheader .main-nav ul li li a.selected {
-    background: rgba(247, 179, 36, 1);
-    color: #fff;
-    border-radius: 0;
-}
 
-#header .main-nav ul li li a.hover, #header .main-nav ul li li a.selected {
-    background: rgba(247, 179, 36, 1);
-    color: #fff;
-    border-radius: 0;
-}
 
 @media (max-width: 991px) {
     #mainheader .brand, #header .brand {
@@ -503,3 +462,78 @@ ul.nav li a {
 
 /* // Slicknav.css
 ==============================*/
+/* Home Section First Menu Style */
+
+#mainheader .main-nav ul > li > a {
+    padding: 33px 10px;
+    color: white;
+}
+
+#header .main-nav ul > li > a {
+    color: white;
+    font-weight: 600;
+}
+
+#mainheader .main-nav ul > li > a {
+    color: white;
+    font-weight: 500;
+}
+
+.selected1 {
+    text-transform: capitalize;
+    color: #c96f00;
+    font-size: 18px;
+    padding: 0px 12px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.selected1:hover, .selected:hover {
+    color: #c96f00;
+    cursor: pointer;
+}
+
+#header .main-nav ul > li > a:hover, #header .main-nav ul > li > a.selected, .selected1 {
+    color: #c96f00;
+}
+
+#mainheader .main-nav ul > li > a:hover, #mainheader .main-nav ul > li > a.selected, #mainheader .main-nav ul > li > a.selected1 {
+    color: #c96f00;
+}
+
+#mainheader .main-nav ul li li a.hover, #mainheader .main-nav ul li li a.selected, #mainheader .main-nav ul li li a.selected1 {
+    background: rgba(247, 179, 36, 1);
+    color: #fff;
+    border-radius: 0;
+}
+
+#header .main-nav ul li li a.hover, #header .main-nav ul li li a.selected, #header .main-nav ul li li a.selected1 {
+    background: rgba(247, 179, 36, 1);
+    color: #fff;
+    border-radius: 0;
+}
+
+.selected1 {
+    color: white;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(240, 118, 27, 0.9);
+}
+
+.selected1:hover {
+    color: #c96f00;
+}
+
+p span {
+    color: #c96f00;
+}
+
+/*
+#mainheader .main-nav ul > li > a {
+    color: white;
+    font-weight: 800;
+    -webkit-text-fill-color: white; !* Will override color (regardless of order) *!
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(196,18,48,0.3);
+}*/
