@@ -261,7 +261,7 @@
     height: 85px;
     top: 0px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-    background-image: url("../../img/top_without_logo.png");
+    background-image: url("../../img/top_header_without_logo.png");
    /* border-radius: 0;
     border: 1px solid #fff;
     border-left: none;
@@ -534,3 +534,9 @@ p span {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(196,18,48,0.3);
 }*/
+
+/*Top Header*/
+.top-logo
+{
+    margin-left: -15%;
+}
