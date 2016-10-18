@@ -2704,6 +2704,7 @@ a.mail-text:hover {
     }
 }
 
+
 /* // Desktop / Ipad /Iphone / Mobile  */
 
 /* Ipad /Iphone / Mobile  */
@@ -2946,6 +2947,8 @@ a.mail-text:hover {
 @media (min-width: 321px) and (max-width: 480px) {
     #header .menu-inner {
         height: 70px;
+   /*     background-color: #C41230;
+        background-image: none; */
     }
 
     #mainheader .menu-inner {
