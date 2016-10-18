@@ -35,6 +35,9 @@
 ==============================*/
 
 /* Header */
+
+@import "http://webfonts.ru/import/barkentina.css";
+
 @font-face {
     font-family: 'Oswald';
     font-style: normal;
@@ -71,6 +74,14 @@
     url('../fonts/oswald-bold-webfont.svg#Oswald') format('svg');
 }
 
+@font-face {
+    font-family: 'Barkentina';
+    src: local('Barkentina 1'), url('barkentina1.woff2') format('woff2'), url('barkentina1.woff') format('woff'), url('barkentina1.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 html, body {
     height: 100%;
     margin: 0;
@@ -82,7 +93,7 @@ body {
     width: 100%;
     overflow: hidden;
     font-size: 14px;
-    font-family: 'Oswald';
+    font-family: 'Barkentina';
     color: #242424;
 }
 
@@ -3427,4 +3438,71 @@ a.mail-text:hover {
         right: 10px !important;
         top: 10px !important;
     }
+}
+
+#mapone{
+    display: inline-block;
+    font-family: 'Barkentina';
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(68,68,68);
+    text-decoration: none;
+    user-select: none;
+    padding: .1em 1.2em;
+    outline: none;
+    border: #FFFFFF;
+    border-radius: 2px;
+    background: #FFFFFF;
+    transition: all .218s ease 0s;
+    width: 180px;
+    height: 40px;
+    margin-bottom: 5px;
+    text-align: left;
+
+}
+
+#mapone:hover{
+    color: #C96F00;
+    border: 1px solid rgb(198,198,198);
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -webkit-border-radius: 15px
+}
+
+#mapone:active{
+    color: rgb(51,51,51);
+    border: 1px solid rgb(204,204,204);
+    background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+    box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+#maptwo{
+    display: inline-block;
+    font-family: 'Barkentina';
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(68,68,68);
+    text-decoration: none;
+    user-select: none;
+    padding: .1em 1.2em;
+    outline: none;
+    border: #FFFFFF;
+    border-radius: 2px;
+    background: #FFFFFF;
+    transition: all .218s ease 0s;
+    width: 180px;
+    height: 40px;
+    text-align: left;
+}
+#maptwo:hover{
+    color: #C96F00;
+    border: 1px solid rgb(198,198,198);
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -webkit-border-radius: 15px;
+}
+#maptwo:active{
+    color: rgb(51,51,51);
+    border: 1px solid rgb(204,204,204);
+    background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+    box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
 }
