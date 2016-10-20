@@ -199,7 +199,7 @@ span a, a {
 }
 
 img {
-    border: none;
+    border: hidden;
 }
 
 .selected1 {
@@ -3093,7 +3093,7 @@ a.mail-text:hover {
 
     .address {
         font-size: 18px;
-        line-height: 34px;
+        line-height: 20px;
     }
 
     .phone {
@@ -3272,8 +3272,8 @@ a.mail-text:hover {
     }
 
     .address {
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 13px;
+        line-height: 24px;
     }
 
     .phone {
@@ -3448,25 +3448,29 @@ a.mail-text:hover {
     color: rgb(68,68,68);
     text-decoration: none;
     user-select: none;
-    padding: .1em 1.2em;
+    padding: 2px 10px 5px 9px;
     outline: none;
-    border: #FFFFFF;
+    border: 1px solid rgb(198,198,198);
     border-radius: 2px;
     background: #FFFFFF;
     transition: all .218s ease 0s;
-    width: 180px;
+    width: 40px;
     height: 40px;
     margin-bottom: 5px;
-    text-align: left;
+    -webkit-border-radius: 5px
 
+}
+
+.textAddress{
+    font-size: 13px;
 }
 
 #mapone:hover{
     color: #C96F00;
-    border: 1px solid rgb(198,198,198);
-    background: #FFFFFF;
+    border: 1px solid #C96F00;
+    background: #FAFAFA;
     box-shadow: 0 1px 2px rgba(0,0,0,.1);
-    -webkit-border-radius: 15px
+    -webkit-border-radius: 5px
 }
 
 #mapone:active{
@@ -3483,22 +3487,24 @@ a.mail-text:hover {
     color: rgb(68,68,68);
     text-decoration: none;
     user-select: none;
-    padding: .1em 1.2em;
+    padding: 2px 10px 5px 9px;
     outline: none;
-    border: #FFFFFF;
+    border: 1px solid rgb(198,198,198);
     border-radius: 2px;
     background: #FFFFFF;
     transition: all .218s ease 0s;
-    width: 180px;
+    width: 40px;
     height: 40px;
+    margin-bottom: 5px;
     text-align: left;
+    -webkit-border-radius: 5px
 }
 #maptwo:hover{
     color: #C96F00;
-    border: 1px solid rgb(198,198,198);
-    background: #FFFFFF;
+    border: 1px solid #C96F00;
+    background: #FAFAFA;
     box-shadow: 0 1px 2px rgba(0,0,0,.1);
-    -webkit-border-radius: 15px;
+    -webkit-border-radius: 5px
 }
 #maptwo:active{
     color: rgb(51,51,51);
