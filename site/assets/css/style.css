@@ -1336,7 +1336,7 @@ Home Page
 
 /* Menu Toggle SECTION
 =================================================== */
-#services .title-splider {
+.services .title-splider {
     width: 95%;
 }
 
@@ -3030,7 +3030,7 @@ a.mail-text:hover {
         width: 100%
     }
 
-    #services .title-splider {
+    .services .title-splider {
         width: 85%;
     }
 
@@ -3203,7 +3203,7 @@ a.mail-text:hover {
         width: 100%
     }
 
-    #services .title-splider {
+    .services .title-splider {
         width: 80%;
     }
 
