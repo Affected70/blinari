@@ -285,9 +285,14 @@ jQuery(document).ready(function ($) {
             $(this).removeClass('toggle-open').addClass('toggle-close').parent().next('.toggle-content').slideToggle(300);
             $(".menuscroll").getNiceScroll().resize();
             $('#scrolldynamic').getNiceScroll().resize();
+
+            $('.contentscroll').animate({
+                scrollTop: this.offsetTop
+            }, 1000);
             return false;
         }
     });
+
 
 //  Toggle Menu */
 
