@@ -108,14 +108,14 @@ function map_canvas_loaded() {
 	};
 	var map_canvas = new google.maps.Map(document.getElementById('map_canvas'), options);
 
-	$('#mapone').click(function() {
+	$('.mapone').click(function() {
 		var location = new google.maps.LatLng('53.190255','50.094060');
 		console.log(map_canvas);
 		map_canvas.setCenter(location);
 		map_canvas.setZoom(17);
 	});
 
-	$('#maptwo').click(function() {
+	$('.maptwo').click(function() {
 		var location = new google.maps.LatLng('53.233511','50.192093');
 		console.log(map_canvas);
 		map_canvas.setCenter(location);

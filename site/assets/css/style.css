@@ -94,7 +94,7 @@ body {
     overflow: hidden;
     font-size: 14px;
     font-family: 'Barkentina';
-    color: #242424;
+    color: #707070;
 }
 
 iframe {
@@ -152,10 +152,10 @@ h4 {
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
+   /* font-family: 'Raleway', sans-serif;*/
     font-size: 16px;
     font-weight: 400;
-    color: #919191;
+    color: #707070;
     z-index: 9999999;
     line-height: 26px;
 }
@@ -221,8 +221,8 @@ img {
     height: 100%;
     /*  margin-top: 22px;TODO*/
     margin-bottom: 10px;
-    /*margin-right:16px;*/
-    margin-right: 5px;
+    margin-right:16px;
+   /* margin-right: 5px;  */
 }
 
 /* // Scrollbar css */
@@ -406,6 +406,7 @@ CSS3 ANIMATIONS  PRELOADER CIRCLE
 
 .social_top {
     padding-top: 50px;
+    margin-left: -7px;
 }
 
 .pad_top13 {
@@ -438,7 +439,7 @@ CSS3 ANIMATIONS  PRELOADER CIRCLE
 
 .content_bold {
     font-weight: 400;
-    color: #919191;
+    color: #707070;
 }
 
 .normal {
@@ -1181,6 +1182,9 @@ Home Page
     z-index: -1;
 }
 
+
+
+
 .fullwidth .content_inner {
     padding-left: 0px;
 }
@@ -1228,7 +1232,7 @@ Home Page
 
 .hour_table {
     margin-bottom: 40px;
-    color: #919191;
+    color: #707070;
 }
 
 .right_content {
@@ -1511,7 +1515,7 @@ Home Page
 
 blockquote {
     font-size: 17px;
-    color: #919191;
+    color: #707070;
 }
 
 blockquote p {
@@ -1521,7 +1525,7 @@ blockquote p {
 .quotes {
     font-size: 20px;
     font-weight: 600;
-    color: #919191;
+    color: #707070;
     font-family: 'Oswald';
 }
 
@@ -1629,7 +1633,7 @@ blockquote p {
 
 .location-cateringlink {
     font-family: 'Raleway', sans-serif;
-    color: #919191;
+    color: #707070;
     padding-bottom: 20px;
 }
 
@@ -1667,7 +1671,7 @@ blockquote p {
 
 .pd_list ul li {
     font-family: 'Raleway', sans-serif;
-    color: #919191;
+    color: #707070;
     line-height: 22px;
 }
 
@@ -2016,7 +2020,7 @@ form label {
     text-transform: uppercase;
 }
 
-a.mail-text {
+a.mail-text, a.public_vk {
     font-size: 15px;
     text-decoration: none;
     line-height: 32px;
@@ -2026,12 +2030,12 @@ a.mail-text {
     text-transform: uppercase;
 }
 
-a.mail-text:hover {
+a.mail-text:hover, a.public_vk:hover {
     text-decoration: none;
     color: #f32a2a;
 }
 
-.mail-text i {
+.mail-text i, .public_vk i {
     margin-right: 10px;
     font-size: 20px;
     color: #f32a2a;
@@ -3115,7 +3119,7 @@ a.mail-text:hover {
         line-height: 34px;
     }
 
-    a.mail-text {
+    a.mail-text, a.public_vk {
         font-size: 15px;
     }
 
@@ -3293,10 +3297,6 @@ a.mail-text:hover {
     .phone {
         font-size: 16px;
         line-height: 30px;
-    }
-
-    a.mail-text {
-        font-size: 12px;
     }
 
     .mail-text i {
@@ -3534,7 +3534,7 @@ a.mail-text:hover {
 }
 .emailadress{
     margin-top: 15px;
-    margin-left: 330px;
+    margin-left: 5px;
 }
 
 .object{
@@ -3596,4 +3596,23 @@ a.mail-text:hover {
     90% { width: 40px; height: 15px; }
     95% { left: 100px; top: -20px; width: 20px; height: 20px;}
     100% { left: 100px; top:0; }
+}
+
+li.list_icon
+{
+    list-style: none;
+    line-height: 2;
+    font-size: 16px;
+}
+
+li.list_icon:before
+{
+    content: "\f00c";
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+
+.no_padding
+{
+    padding: 0;
 }

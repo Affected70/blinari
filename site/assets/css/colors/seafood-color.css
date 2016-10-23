@@ -90,8 +90,17 @@ a.mail-text:hover {
     color: #c96f00;
 }
 
+a.public_vk:hover
+{
+    color: #64809d
+}
+
 .mail-text i {
     color: #c96f00;
+}
+
+.public_vk i {
+    color: #64809d;
 }
 
 #contact_form .submitBtn {
