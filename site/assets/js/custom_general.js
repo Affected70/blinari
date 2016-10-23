@@ -211,13 +211,13 @@ jQuery(document).ready(function ($) {
     $("body").jpreLoader(
         {
             splashID: "#jSplash",
-            showPercentage: !0,
+            showPercentage: 0,
             autoClose: !0,
-            showSplash: true,
-            splashFunction: function () {
-                $("#circle").delay(1250).animate({opacity: 1}, 700, "linear");
-            }
-        })
+            /*showSplash: true,*/
+            /*splashFunction: function () {
+               /!* $("#circle").delay(1250).animate({opacity: 1}, 700, "linear");*!/
+            }*/
+        });
 //Preloader end
 
 

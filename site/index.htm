@@ -73,12 +73,27 @@
     <script src="assets/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 
+    <style>
 
+
+    </style>
 </head>
 <body>
 <!--PRELOADER-->
 <section id="jSplash">
-    <div id="circle"></div>
+    <!--<div id="circle"></div>-->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two" style="left:20px;"></div>
+                <div class="object" id="object_three" style="left:40px;"></div>
+                <div class="object" id="object_four" style="left:60px;"></div>
+                <div class="object" id="object_five" style="left:80px;"></div>
+            </div>
+        </div>
+
+    </div>
 </section>
 <div id="menutop"></div>
 
@@ -2642,157 +2657,316 @@
 =============================-->
 
         <div id="gallerywithoutfilter" class="item">
-            <img src="assets/img/5.jpg" alt="The Spice Lounge" class="fullBg">
+           <!-- <img src="assets/img/5.jpg" alt="The Spice Lounge" class="fullBg">-->
 
             <div class="content contentscroll">
                 <div class="content_overlay_fullwidth"></div>
-                <section class="portfolio">
+                <section class="portfolio text-center">
                     <!-- Portfolio Section -->
                     <section class="section">
                         <div class="container">
-                            <div class="prettygalheading clearfix text-center"><h1>Gallery Filter</h1>
+                            <div class="prettygalheading clearfix text-center"><h1>Галерея</h1>
 
-                                <p class="text-center pad_top13">Nutritionists, naturopaths, doctors, and journalists
-                                    weigh in on topics organic food.</p>
                             </div>
                             <!-- Portfolio Filters -->
                             <!-- End Portfolio Filters -->
                         </div>
                         <div class="portfolio-top"></div>
                         <!-- Portfolio Grid -->
-                        <ul id="portfolio-grid" class="portfolio-grid">
-                            <!-- Portfolio Item 1 -->
+                        <ul id="portfolio-grid" class="portfolio-grid text-center">
                             <li class="mix all food vimeo mix_all">
-                                <div class="view3 third-effect3"><img src="assets/img/16.jpg" alt="">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb1.jpg" alt="">
 
-                                    <div class="mask"><a href="assets/img/16.jpg" title="Project description"
-                                                         data-rel="prettyPhoto[gallery1]"
-                                                         class="viewDetail lightbox info">
-                                        <div class="project-overlay">
-                                            <h3>Spring Roll</h3>
-                                            <span class="project-name">Food</span></div>
+                                    <div class="mask"><a href="img/gallery/gallery1.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
                                     </a></div>
                                 </div>
                             </li>
-                            <!-- // Portfolio Item 1 -->
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb2.jpg" alt="">
 
-                            <!-- Portfolio Item 2 -->
-                            <li class="mix all events you_tube mix_all">
-                                <div class="view3 third-effect3"><img src="assets/img/18.jpg" alt="">
-
-                                    <div class="mask"><a href="assets/img/18.jpg" title="Project description"
-                                                         data-rel="prettyPhoto[gallery1]"
-                                                         class="viewDetail lightbox info">
-                                        <div class="project-overlay">
-                                            <h3>Dinner Series</h3>
-                                            <span class="project-name">Events</span></div>
+                                    <div class="mask"><a href="img/gallery/gallery2.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
                                     </a></div>
                                 </div>
                             </li>
-                            <!-- // Portfolio Item 2 -->
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb3.jpg" alt="">
 
-                            <!-- Portfolio Item 3 -->
-                            <li class="mix all you_tube events mix_all">
-                                <div class="view3 third-effect3"><img src="assets/img/8.jpg" alt="">
-
-                                    <div class="mask"><a href="https://www.youtube.com/watch?v=gcISzEAQJxg"
-                                                         title="Project description" data-rel="prettyPhoto[gallery1]"
-                                                         class="viewDetail lightbox info">
-                                        <div class="project-overlay">
-                                            <h3>Vegitable trittatta</h3>
-                                            <span class="project-name">Youtube</span></div>
+                                    <div class="mask"><a href="img/gallery/gallery3.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
                                     </a></div>
                                 </div>
                             </li>
-                            <!-- // Portfolio Item 3 -->
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb4.jpg" alt="">
 
-                            <!-- Portfolio Item 4 -->
-                            <li class="mix all food vimeo events  mix_all">
-                                <div class="view3 third-effect3"><img src="assets/img/2.jpg" alt="">
-
-                                    <div class="mask"><a href="assets/img/2.jpg" title="Project description"
-                                                         data-rel="prettyPhoto[gallery1]"
-                                                         class="viewDetail lightbox info">
-                                        <div class="project-overlay">
-                                            <h3>Curry Puff</h3>
-                                            <span class="project-name">Food</span></div>
+                                    <div class="mask"><a href="img/gallery/gallery4.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
                                     </a></div>
                                 </div>
                             </li>
-                            <!-- // Portfolio Item 4 -->
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb5.jpg" alt="">
 
-                            <!-- Portfolio Item 5 -->
-                            <li class="mix all events  mix_all">
-                                <div class="view3 third-effect3"><img src="assets/img/19.jpg" alt="">
-
-                                    <div class="mask"><a href="assets/img/19.jpg" title="Project description"
-                                                         data-rel="prettyPhoto[gallery1]"
-                                                         class="viewDetail lightbox info">
-                                        <div class="project-overlay">
-                                            <h3>Food &amp; Wine</h3>
-                                            <span class="project-name">Events</span></div>
+                                    <div class="mask"><a href="img/gallery/gallery5.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
                                     </a></div>
                                 </div>
                             </li>
-                            <!-- // Portfolio Item 5 -->
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb6.jpg" alt="">
 
-                            <!-- Portfolio Item 6 -->
-                            <li class="mix all food you_tube  mix_all">
-                                <div class="view3 third-effect3"><img src="assets/img/4.jpg" alt="">
-
-                                    <div class="mask"><a href="assets/img/4.jpg" title="Project description"
-                                                         data-rel="prettyPhoto[gallery1]"
-                                                         class="viewDetail lightbox info">
-                                        <div class="project-overlay">
-                                            <h3>Satay</h3>
-                                            <span class="project-name">Food</span></div>
+                                    <div class="mask"><a href="img/gallery/gallery6.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
                                     </a></div>
                                 </div>
                             </li>
-                            <!-- // Portfolio Item 6 -->
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb7.jpg" alt="">
 
-                            <!-- Portfolio Item 7 -->
-                            <li class="mix all food vimeo  mix_all">
-                                <div class="view3 third-effect3"><img src="assets/img/7.jpg" alt="">
-
-                                    <div class="mask"><a href="assets/img/7.jpg" title="Project description"
-                                                         data-rel="prettyPhoto[gallery1]"
-                                                         class="viewDetail lightbox info">
-                                        <div class="project-overlay">
-                                            <h3>Pork Loin</h3>
-                                            <span class="project-name">Food</span></div>
+                                    <div class="mask"><a href="img/gallery/gallery7.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
                                     </a></div>
                                 </div>
                             </li>
-                            <!-- // Portfolio Item 7 -->
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb8.jpg" alt="">
 
-                            <!-- Portfolio Item 8 -->
-                            <li class="mix all vimeo you_tube  mix_all">
-                                <div class="view3 third-effect3"><img src="assets/img/12.jpg" alt="">
-
-                                    <div class="mask"><a href="http://vimeo.com/21019223" title="Project description"
-                                                         data-rel="prettyPhoto[gallery1]"
-                                                         class="viewDetail lightbox info">
-                                        <div class="project-overlay">
-                                            <h3>Delicious Food</h3>
-                                            <span class="project-name">Vimeo</span></div>
+                                    <div class="mask"><a href="img/gallery/gallery8.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
                                     </a></div>
                                 </div>
                             </li>
-                            <!-- // Portfolio Item 8 -->
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb9.jpg" alt="">
 
-                            <li class="mix all vimeo you_tube  mix_all">
-                                <div class="view3 third-effect3"><img src="assets/img/12.jpg" alt="">
-
-                                    <div class="mask"><a href="http://vimeo.com/21019223" title="Project description"
-                                                         data-rel="prettyPhoto[gallery1]"
-                                                         class="viewDetail lightbox info">
-                                        <div class="project-overlay">
-                                            <h3>Delicious Food</h3>
-                                            <span class="project-name">Vimeo</span></div>
+                                    <div class="mask"><a href="img/gallery/gallery9.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
                                     </a></div>
                                 </div>
                             </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb10.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery10.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb11.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery11.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb12.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery12.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb13.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery13.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb14.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery14.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb15.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery15.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb16.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery16.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb17.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery17.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb18.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery18.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb19.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery19.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb20.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery20.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb21.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery21.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb22.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery22.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb23.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery23.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb24.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery24.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb25.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery25.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb26.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery26.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb27.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery27.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb28.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery28.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+                            <li class="mix all food vimeo mix_all">
+                                <div class="view3 third-effect3"><img src="img/gallery/thumb/gallery_thumb29.jpg" alt="">
+
+                                    <div class="mask"><a href="img/gallery/gallery29.jpg"
+                                                         data-rel="prettyPhoto[gallery2]"
+                                                         class="lightbox info">
+                                        <div class="project-overlay"></div>
+                                    </a></div>
+                                </div>
+                            </li>
+
                         </ul>
                         <!-- End Portfolio Grid -->
                     </section>

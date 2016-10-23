@@ -4,10 +4,10 @@
     $(function ($) {
         $("body").vegas({
             slides: [
+                {src: "img/background/321.jpg"},
                 {src: "img/background/bg_1.jpg"},
-                {src: "img/background/bg_3.jpg"},
                 {src: "img/background/123.jpg"},
-                {src: "img/background/321.jpg"}
+                {src: "img/background/bg_3.jpg"}
             ],
             transition: [ 'fade'],
             transitionDuration: 3000,
