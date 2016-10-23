@@ -3616,3 +3616,8 @@ li.list_icon:before
 {
     padding: 0;
 }
+
+.menu_descr
+{
+    font-size: 18px;
+}

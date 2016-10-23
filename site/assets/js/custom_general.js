@@ -63,7 +63,6 @@ jQuery(document).ready(function ($) {
     $(".nav-link").click(function (e) {
         e.preventDefault();
     });
-
 //on page load show from hash index.html#about
     /*********************************************************************************/
     var url = window.location.href;
@@ -282,13 +281,27 @@ jQuery(document).ready(function ($) {
         }
 
         else {
+
             $(this).removeClass('toggle-open').addClass('toggle-close').parent().next('.toggle-content').slideToggle(300);
             $(".menuscroll").getNiceScroll().resize();
             $('#scrolldynamic').getNiceScroll().resize();
 
-            $('.contentscroll').animate({
+            var scroll = $('.contentscroll');
+
+            scroll.animate({
                 scrollTop: this.offsetTop
-            }, 1000);
+            }, 2000, function()
+            {
+                scroll.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
+            });
+
+            // Stop the animation if the user scrolls. Defaults on .stop() should be fine
+            scroll.bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
+                if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel"){
+                    scroll.stop().unbind('scroll mousedown DOMMouseScroll mousewheel keyup'); // This identifies the scroll as a user action, stops the animation, then unbinds the event straight after (optional)
+                }
+            });
+
             return false;
         }
     });
