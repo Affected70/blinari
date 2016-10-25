@@ -1,6 +1,7 @@
 // To setup the template, change the variables below
 // Follow instructions in code comments or see documentation for more detail
 
+
 //  1. Configurations or Settings
 //  2. Navigation on click/ on load / on hasch chage scroll to 
 // 	3. Menu / Internal / Exteranl links  
@@ -14,7 +15,15 @@
 /*****************************************************************************
  1. Configurations or Settings
  ******************************************************************************/
-
+console.log("come here?");
+$(function () {
+    $('#sub-nav').slicknav({
+        label: '',
+        duration: 1000,
+        easingOpen: "easeOutQuint", //available with jQuery UI
+        closeOnClick: true,
+    });
+});
 //Scroll speed and page animation Scrollto.js parameter
 
 var horizontal_scroll_speed = 1500 // speed Horizontal Scrollto parameter default #1200.
@@ -160,15 +169,6 @@ jQuery(document).ready(function ($) {
 // Slick navigation for mobile / tablet purpose
 
 
-    $(function () {
-        $('#sub-nav').slicknav({
-            label: '',
-            duration: 1000,
-            easingOpen: "easeOutQuint", //available with jQuery UI
-            closeOnClick: true
-        });
-    });
-
 // on hash change 
     window.onhashchange = function () {
         $('.selected').removeClass('selected');
@@ -211,7 +211,7 @@ jQuery(document).ready(function ($) {
         {
             splashID: "#jSplash",
             showPercentage: 0,
-            autoClose: !0,
+            autoClose: !0
             /*showSplash: true,*/
             /*splashFunction: function () {
                /!* $("#circle").delay(1250).animate({opacity: 1}, 700, "linear");*!/
@@ -242,19 +242,6 @@ jQuery(document).ready(function ($) {
     });
 // niceScroll Bar options end
 
-
-// Home page Social on mouse over slide up / down
-
-    jQuery(function ($) {
-        $('.accura-jump a,' +
-            '.accura-jump-bg a').each(function () {
-            var $el = $(this);
-            $el.append($el.find('i').clone());
-        });
-        $('.accura-social-icons-big a i').wrap('<span></span>');
-    });
-
-// Home page Social on mouse over END
 
 
 //  FIT VID Video for Responsive purpose */
