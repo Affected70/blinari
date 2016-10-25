@@ -184,7 +184,7 @@ ul.nav ul li a.selected, ul.nav ul li a.focus, ul.nav ul li a.hover {
     color: #ffffff;
 }
 
-ul.nav li a {
+/*ul.nav li a {
     font-family: 'Oswald';
     text-transform: uppercase;
     font-weight: 400;
@@ -192,7 +192,7 @@ ul.nav li a {
     font-size: 13px;
     color: #a6a9b9;
     width: 100%;
-}
+}*/
 
 
 
@@ -234,10 +234,10 @@ ul.nav li a {
     .menu-inner .brand { /*width:250px; padding:10px 0px;*/
     }
 
-    .menu-inner .main-nav { /*padding:20px 0 0 42px;*/
+/*    .menu-inner .main-nav { !*padding:20px 0 0 42px;*!
         margin: 0;
         text-align: right;
-    }
+    }*/
 
     .menu-inner .nav-toggle {
         display: none
