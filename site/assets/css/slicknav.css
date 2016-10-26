@@ -128,7 +128,7 @@ letter-spacing: 1px;
 
 
 @media (min-width: 768px) and (max-width: 980px) {
-.slicknav_menu .slicknav_no-text {margin: 26px 20px;}
+    .slicknav_menu .slicknav_no-text {margin: 16px 20px;}
 }
 @media (min-width: 481px) and (max-width: 767px){
 .slicknav_menu .slicknav_no-text {margin: 16px 12px;}

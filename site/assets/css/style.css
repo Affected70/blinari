@@ -2921,7 +2921,7 @@ a.mail-text:hover, a.public_vk:hover {
     }
 }
 
-@media (min-width: 1001px) and (max-width: 1100px) {
+@media (min-width: 993px) and (max-width: 1100px) {
     #mainheader .menu-inner {
         height: 55px;
     }
@@ -2954,7 +2954,140 @@ a.mail-text:hover, a.public_vk:hover {
     }
 }
 
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (min-width: 950px) and (max-width: 992px)
+{
+    #header .menu-inner .brand a img {
+        margin-left: -55% !important;
+        margin-top: -10px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 949px)
+{
+    #header .menu-inner .brand a img {
+        margin-left: -44% !important;
+        margin-top: -10px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 899px)
+{
+    #header .menu-inner .brand a img {
+        margin-left: -30% !important;
+        margin-top: -10px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 849px)
+{
+    #header .menu-inner .brand a img {
+        margin-left: -18% !important;
+        margin-top: -10px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #mainheader .menu-inner {
+        height: 55px;
+    }
+
+    ul.nav li a {
+        font-size: 16px !important;
+    }
+
+    .main-nav > ul {
+        margin: -21px 0 0 0 !important;
+        padding-right: 85px !important;
+    }
+
+    .main-nav > ul#sub-nav {
+        margin: 0 !important;
+        padding-left: 0;
+    }
+
+    #header > .menu-inner {
+        background: #C41431 none !important;
+        height: 65px;
+    }
+
+    #header .menu-inner .brand a img {
+       /* margin-left: -15% !important;*/
+       /* margin-top: -10px;
+        height: 70px;*/
+    }
+
+    .main-nav ul li a {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .mapone, .maptwo
+    {
+        display: none !important;
+    }
+
+    .portfolio-grid, #portfolio-grid
+    {
+        left: 25%;
+        position: relative;
+        padding: 0;
+        margin-left: 0 !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    #mainheader .menu-inner {
+        height: 65px;
+    }
+
+    ul.nav li a {
+        font-size: 16px !important;
+    }
+
+    .main-nav > ul {
+        margin: -21px 0 0 0 !important;
+        padding-right: 85px !important;
+    }
+
+    .main-nav > ul#sub-nav {
+        margin: 0 !important;
+        padding-left: 0;
+    }
+
+    #header > .menu-inner {
+        background: #C41431 none !important;
+    }
+
+   /* #header .menu-inner .brand a img {
+        margin-left: 0px !important;
+        margin-top: -10px;
+        height: 75px;
+    }*/
+
+    .main-nav ul li a {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .mapone, .maptwo
+    {
+        display: none !important;
+    }
+
+    .portfolio-grid, #portfolio-grid
+    {
+        left: 25%;
+        position: relative;
+        padding: 0;
+        margin-left: 0 !important;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
     #mainheader .menu-inner {
         height: 55px;
     }
@@ -2978,8 +3111,9 @@ a.mail-text:hover, a.public_vk:hover {
     }
 
     #header .menu-inner .brand a img {
-        margin-left: -30px !important;
-        margin-top: -10px;
+        margin-left: 0px !important;
+        margin-top: -5px;
+        height: 70px;
     }
 
     .main-nav ul li a {
@@ -2994,12 +3128,71 @@ a.mail-text:hover, a.public_vk:hover {
 
     .portfolio-grid, #portfolio-grid
     {
-        left: 25%;
+        left: -6%;
         position: relative;
         padding: 0;
-        margin-left: 0 !important;
     }
 
+    #header {
+        display: block;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 399px) {
+    #mainheader .menu-inner {
+        display: none;
+
+    }
+
+    ul.nav li a {
+        font-size: 16px !important;
+    }
+
+    .main-nav > ul {
+        margin: -21px 0 0 0 !important;
+        padding-right: 85px !important;
+    }
+
+    .main-nav > ul#sub-nav {
+        margin: 0 !important;
+        padding-left: 0;
+    }
+
+    #header > .menu-inner {
+        background: #C41431 none !important;
+        height: 50px !important;
+    }
+
+    #header .menu-inner .brand a img {
+        margin-left: 0px !important;
+        margin-top: -18px;
+        height: 55px;
+    }
+
+    .main-nav ul li a {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .mapone, .maptwo
+    {
+        display: none !important;
+    }
+
+    .portfolio-grid, #portfolio-grid
+    {
+        left: -8%;
+        position: relative;
+        padding: 0;
+    }
+
+    #header {
+        display: block;
+    }
+
+    .slicknav_menu .slicknav_no-text {
+        margin: 10px 12px !important;
+    }
 }
 
 /*//  Desktop Max-Width 1400 */
@@ -3142,14 +3335,14 @@ a.mail-text:hover, a.public_vk:hover {
 /* Ipad /Iphone / Mobile  */
 
 @media (min-width: 768px) and (max-width: 990px) {
-    #mainheader .menu-inner {
+  /*  #mainheader .menu-inner {
         height: 85px;
     }
 
     #header .menu-inner {
         height: 85px;
     }
-
+*/
     #header {
         display: block;
     }

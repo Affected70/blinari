@@ -116,14 +116,15 @@ jQuery(document).ready(function ($) {
 // on click navigation 
     /*********************************************************************************/
     $('.main-nav a.nav-link,a.nav-link').click(function () {
-
+        var width = window.width;
+        console.log("Width:  " + width);
         var name = $(this).attr('href');
         if (name != "#") { // if navigation not equalt to "#"
 
             if (name == "#home") {
                 $('.selected').removeClass('selected');
                 $("a[href='" + name + "']").addClass('selected');
-
+                console.log("hide header");
                 $('#header').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 1000);
                 Animation("#header", "fadeOutUp", "200");
             }
@@ -132,6 +133,7 @@ jQuery(document).ready(function ($) {
                     $('.selected').removeClass('selected');
                     $("a[href='" + name + "']").addClass('selected');
                     $('#mainheader').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 600);
+                    console.log("hide mainheader");
                     Animation("#mainheader", "fadinUp", "200");
                 }
             }
@@ -140,7 +142,7 @@ jQuery(document).ready(function ($) {
             $('#wrapper').scrollTo($(this).attr('href'), horizontal_scroll_speed, {
                 easing: 'easeInOutExpo', axis: 'x', onAfter: function () { // scrollto callback  function
 
-                    if (name == "#home") { // for home page animation
+                    if (name == "#home" && width > 991) { // for home page animation
                         Homepage_Animation();
                         $("a[href='#home']").addClass('selected');
                     }
