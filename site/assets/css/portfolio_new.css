@@ -69,6 +69,12 @@
     display: table;
 }
 
+.events_gallery
+{
+    left: 24% !important;
+    position: absolute!important;
+}
+
 .portfolio-grid:after,
 #portfolio-grid:after {
     clear: both;
@@ -87,6 +93,12 @@
     border: 1px solid #F8992A;
     margin: 2px;
 }
+
+.events_gallery li
+{
+    width: 45% !important;
+}
+
 
 .three_half .portfolio-grid li, .three_half #portfolio-grid li {
     width: 33%;

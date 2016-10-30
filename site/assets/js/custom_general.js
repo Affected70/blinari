@@ -311,7 +311,7 @@ jQuery(document).ready(function ($) {
      *************************************************************/
 
     jQuery("area[data-rel^='prettyPhoto']").prettyPhoto();
-    jQuery("#portfolio-grid:first a[data-rel^='prettyPhoto']").prettyPhoto({
+    jQuery("#portfolio-grid:first a[data-rel^='prettyPhoto'], .portfolio-grid:first a[data-rel^='prettyPhoto']").prettyPhoto({
         animation_speed: 'normal',
         theme: 'pp_default',
         slideshow: 3000,
@@ -340,7 +340,7 @@ jQuery(document).ready(function ($) {
 
 
     //mixitup Portfolio filters
-    $('#portfolio-grid').mixitup({
+    $('#portfolio-grid, .portfolio-grid').mixitup({
         effects: ['fade', 'scale'],
         easing: 'snap'
     });

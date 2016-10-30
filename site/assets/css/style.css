@@ -4247,6 +4247,10 @@ a.mail-text:hover, a.public_vk:hover {
 li.list_icon {
     list-style: none;
     line-height: 2;
+}
+
+.font_size_16
+{
     font-size: 16px;
 }
 
@@ -4262,6 +4266,11 @@ li.list_icon:before {
 
 .menu_descr {
     font-size: 18px;
+}
+
+.font_size_22
+{
+    font-size: 22px;
 }
 
 /*@media (max-width: 990px) {
