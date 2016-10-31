@@ -2611,6 +2611,10 @@ a.mail-text:hover, a.public_vk:hover {
         /*height: 80px;*/
         margin-left: -120px;
     }
+
+    .events_gallery {
+        left: 27% !important;
+    }
 }
 
 @media (min-width: 1851px) and (max-width: 2000px) {
@@ -2644,6 +2648,10 @@ a.mail-text:hover, a.public_vk:hover {
     #header .menu-inner .brand a img {
         padding-left: 20px !important;
         /*height: 80px;*/
+    }
+
+    .events_gallery {
+        left: 25% !important;
     }
 }
 
@@ -2685,6 +2693,10 @@ a.mail-text:hover, a.public_vk:hover {
         padding-left: 100px !important;
         height: 80px;
     }
+
+    .events_gallery {
+        left: 23% !important;
+    }
 }
 
 @media (min-width: 1601px) and (max-width: 1750px) {
@@ -2723,6 +2735,10 @@ a.mail-text:hover, a.public_vk:hover {
     #header .menu-inner .brand a img {
         padding-left: 160px !important;
         height: 80px;
+    }
+
+    .events_gallery {
+        left: 21% !important;
     }
 }
 
@@ -2767,6 +2783,10 @@ a.mail-text:hover, a.public_vk:hover {
     #header > .menu-inner .header-table {
         margin-left: -125px;
     }
+
+    .events_gallery {
+        left: 19% !important;
+    }
 }
 
 @media (min-width: 1401px) and (max-width: 1500px) {
@@ -2810,6 +2830,10 @@ a.mail-text:hover, a.public_vk:hover {
     #header > .menu-inner .header-table {
         margin-left: -90px;
     }
+
+    .events_gallery {
+        left: 17% !important;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -2845,6 +2869,10 @@ a.mail-text:hover, a.public_vk:hover {
 
     #header .menu-inner .brand a img {
         padding-left: 50px !important;
+    }
+
+    .events_gallery {
+        left: 11% !important;
     }
 }
 
@@ -2884,6 +2912,10 @@ a.mail-text:hover, a.public_vk:hover {
     #header > .menu-inner .header-table {
         margin-left: -70px;
     }
+
+    .events_gallery {
+        left: 8% !important;
+    }
 }
 
 @media (min-width: 1101px) and (max-width: 1150px) {
@@ -2919,6 +2951,10 @@ a.mail-text:hover, a.public_vk:hover {
         padding-left: 5px !important;
         padding-right: 5px !important;
     }
+
+    .events_gallery {
+        left: 7% !important;
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1100px) {
@@ -2952,6 +2988,10 @@ a.mail-text:hover, a.public_vk:hover {
         padding-left: 5px !important;
         padding-right: 5px !important;
     }
+
+    .events_gallery {
+        left: 6% !important;
+    }
 }
 
 @media (min-width: 950px) and (max-width: 992px)
@@ -2960,6 +3000,10 @@ a.mail-text:hover, a.public_vk:hover {
         margin-left: -55% !important;
         margin-top: -10px;
         height: 70px;
+    }
+
+    .events_gallery {
+        left: 11% !important;
     }
 }
 
@@ -2970,6 +3014,10 @@ a.mail-text:hover, a.public_vk:hover {
         margin-top: -10px;
         height: 70px;
     }
+
+    .events_gallery {
+        left: 11% !important;
+    }
 }
 
 @media (min-width: 850px) and (max-width: 899px)
@@ -2979,6 +3027,10 @@ a.mail-text:hover, a.public_vk:hover {
         margin-top: -10px;
         height: 70px;
     }
+
+    .events_gallery {
+        left: 11% !important;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 849px)
@@ -2987,6 +3039,10 @@ a.mail-text:hover, a.public_vk:hover {
         margin-left: -18% !important;
         margin-top: -10px;
         height: 70px;
+    }
+
+    .events_gallery {
+        left: 11% !important;
     }
 }
 
@@ -3015,9 +3071,9 @@ a.mail-text:hover, a.public_vk:hover {
     }
 
     #header .menu-inner .brand a img {
-       /* margin-left: -15% !important;*/
-       /* margin-top: -10px;
-        height: 70px;*/
+        margin-left: -13% !important;
+        margin-top: -10px;
+        height: 70px;
     }
 
     .main-nav ul li a {
@@ -3036,6 +3092,10 @@ a.mail-text:hover, a.public_vk:hover {
         position: relative;
         padding: 0;
         margin-left: 0 !important;
+    }
+
+    .events_gallery {
+        left: 11% !important;
     }
 }
 
@@ -3062,11 +3122,11 @@ a.mail-text:hover, a.public_vk:hover {
         background: #C41431 none !important;
     }
 
-   /* #header .menu-inner .brand a img {
+    #header .menu-inner .brand a img {
         margin-left: 0px !important;
-        margin-top: -10px;
+        margin-top: -8px;
         height: 75px;
-    }*/
+    }
 
     .main-nav ul li a {
         padding-left: 5px !important;
@@ -3084,6 +3144,10 @@ a.mail-text:hover, a.public_vk:hover {
         position: relative;
         padding: 0;
         margin-left: 0 !important;
+    }
+
+    .events_gallery {
+        left: 11% !important;
     }
 }
 
@@ -3136,6 +3200,10 @@ a.mail-text:hover, a.public_vk:hover {
     #header {
         display: block;
     }
+
+    .events_gallery {
+        left: 0% !important;
+    }
 }
 
 @media (min-width: 200px) and (max-width: 399px) {
@@ -3165,7 +3233,7 @@ a.mail-text:hover, a.public_vk:hover {
 
     #header .menu-inner .brand a img {
         margin-left: 0px !important;
-        margin-top: -18px;
+        margin-top: -20px;
         height: 55px;
     }
 
@@ -3192,6 +3260,33 @@ a.mail-text:hover, a.public_vk:hover {
 
     .slicknav_menu .slicknav_no-text {
         margin: 10px 12px !important;
+    }
+
+    .object {
+        margin: 0 !important;
+    }
+
+    .events_gallery {
+        left: -10% !important;
+    }
+
+    .specials-content h4
+    {
+        display: table-caption;
+    }
+}
+
+@media (min-width: 374px) and (max-width: 500px)
+{
+    #header .menu-inner .brand a img {
+        margin-left: 0px !important;
+        margin-top: -18px;
+        height: 55px;
+    }
+
+    .events_gallery {
+        left: -5% !important;
+        position: absolute!important;
     }
 }
 
@@ -3644,7 +3739,7 @@ a.mail-text:hover, a.public_vk:hover {
 
     .specials-content {
         padding-left: 0;
-        width: 100%;
+        width: auto;
     }
 
     .specials-round {
