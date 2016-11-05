@@ -116,14 +116,12 @@ jQuery(document).ready(function ($) {
     /*********************************************************************************/
     $('.main-nav a.nav-link,a.nav-link').click(function () {
         var width = window.width;
-        console.log("Width:  " + width);
         var name = $(this).attr('href');
         if (name != "#") { // if navigation not equalt to "#"
 
             if (name == "#home") {
                 $('.selected').removeClass('selected');
                 $("a[href='" + name + "']").addClass('selected');
-                console.log("hide header");
                 $('#header').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 1000);
                 Animation("#header", "fadeOutUp", "200");
             }
@@ -132,7 +130,6 @@ jQuery(document).ready(function ($) {
                     $('.selected').removeClass('selected');
                     $("a[href='" + name + "']").addClass('selected');
                     $('#mainheader').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 600);
-                    console.log("hide mainheader");
                     Animation("#mainheader", "fadinUp", "200");
                 }
             }
@@ -252,7 +249,7 @@ jQuery(document).ready(function ($) {
     /*  Carousel Slider Used In Project Modal page  */
     $('.carousel').carousel({
         interval: 3000
-    })
+    });
     /* Carousel Slider end */
 
 
@@ -449,9 +446,6 @@ function resizePanel() {
     height = $(window).height();
 
     mask_width = width * $('.item').length;
-    console.log("Mask_width: " + mask_width);
-    console.log("Height: " + height);
-    console.log("item lenght: " + $('.item').length);
 
     $('#debug').html(width + ' ' + height + ' ' + mask_width);
 
@@ -465,22 +459,29 @@ $(window).load(function () {
         $bg = $(".bg"),
         aspectRatio = $bg.width() / $bg.height();
 
-   /* function resizeBg() {
+    /* function resizeBg() {
 
-        if ((theWindow.width() / theWindow.height()) < aspectRatio) {
-           /!* $bg
-                .removeClass()
-                .addClass('bgheight');*!/
-        } else {
-            /!*$bg
-                .removeClass()
-                .addClass('bgwidth');*!/
-        }
-    }*/
+     if ((theWindow.width() / theWindow.height()) < aspectRatio) {
+     /!* $bg
+     .removeClass()
+     .addClass('bgheight');*!/
+     } else {
+     /!*$bg
+     .removeClass()
+     .addClass('bgwidth');*!/
+     }
+     }*/
 
     theWindow.resize(function () {
-      /*  resizeBg();*/
+        /*  resizeBg();*/
     }).trigger("resize");
+
+    var width = window.width;
+
+    if (width <= 800)
+    {
+        document.getElementById("map_canvas").remove();
+    }
 
 });
 
@@ -496,6 +497,7 @@ $('.modal').click(function () {
     video_containers = $('.video_containers');
     video_containers.html(video_containers.html());
 });
+
 
 
 //map click

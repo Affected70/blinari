@@ -2832,7 +2832,7 @@ a.mail-text:hover, a.public_vk:hover {
     }
 
     .events_gallery {
-        left: 17% !important;
+        left: 16% !important;
     }
 }
 
@@ -2870,9 +2870,33 @@ a.mail-text:hover, a.public_vk:hover {
     #header .menu-inner .brand a img {
         padding-left: 50px !important;
     }
+}
 
+@media (min-width: 1351px) and (max-width: 1400px)
+{
+    .events_gallery {
+        left: 14% !important;
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 1350px)
+{
+    .events_gallery {
+        left: 13% !important;
+    }
+}
+
+@media (min-width: 1251px) and (max-width: 1300px)
+{
     .events_gallery {
         left: 11% !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1250px)
+{
+    .events_gallery {
+        left: 10% !important;
     }
 }
 
@@ -3206,6 +3230,28 @@ a.mail-text:hover, a.public_vk:hover {
     }
 }
 
+@media (min-width: 321px) and (max-width: 399px)
+{
+    #header .menu-inner .brand a img {
+        margin-left: 0px !important;
+        margin-top: -18px;
+        height: 55px;
+    }
+}
+
+
+
+@media (min-width: 200px) and (max-width: 320px)
+{
+    #header .menu-inner .brand a img {
+        margin-left: 0px !important;
+        margin-top: -8px;
+        height: 55px;
+    }
+}
+
+
+
 @media (min-width: 200px) and (max-width: 399px) {
     #mainheader .menu-inner {
         display: none;
@@ -3231,11 +3277,7 @@ a.mail-text:hover, a.public_vk:hover {
         height: 50px !important;
     }
 
-    #header .menu-inner .brand a img {
-        margin-left: 0px !important;
-        margin-top: -20px;
-        height: 55px;
-    }
+
 
     .main-nav ul li a {
         padding-left: 5px !important;
@@ -3287,6 +3329,10 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: -5% !important;
         position: absolute!important;
+    }
+
+    .object {
+        margin: 0 !important;
     }
 }
 
@@ -3666,13 +3712,14 @@ a.mail-text:hover, a.public_vk:hover {
 
 @media (min-width: 321px) and (max-width: 480px) {
     #header .menu-inner {
-        height: 70px;
+        height: 50px;
         /*     background-color: #C41230;
              background-image: none; */
     }
 
     #mainheader .menu-inner {
-        height: 70px;
+        display: none;
+
     }
 
     .brand a {
