@@ -147,7 +147,7 @@ h4 {
 
 p {
     /* font-family: 'Raleway', sans-serif;*/
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     color: #707070;
     z-index: 9999999;
@@ -1360,13 +1360,18 @@ Home Page
 .toggle-header {
     width: 100%;
     background-color: rgba(51, 51, 51, 0.98);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 100;
     line-height: 49px;
     text-decoration: none;
     text-transform: uppercase;
     color: #b9b9b9;
     letter-spacing: 1px;
+}
+
+.weight
+{
+    font-size: 20px;
 }
 
 .toggle-close .toggle-header {
@@ -1440,7 +1445,8 @@ Home Page
 
 .specials-round h4 {
     text-align: center;
-    margin-top: 13px;
+    margin-top: 9px;
+    font-size: 18px;
 }
 
 .specials-content {
@@ -1452,6 +1458,11 @@ Home Page
 .specials-content h4 {
     margin-top: -13px;
     margin-bottom: 0;
+    font-size: 17px;
+}
+
+.specials-content p {
+    font-size: 18px;
 }
 
 .specials-content h4.two-rows {
@@ -2624,11 +2635,11 @@ a.mail-text:hover, a.public_vk:hover {
     }
 
     .main-nav > ul#sub-nav.nav li a {
-        font-size: 18px !important;
+        font-size: 21px !important;
     }
 
     .main-nav > ul.nav li a {
-        font-size: 20px !important;
+        font-size: 24px !important;
     }
 
     .main-nav > ul {
@@ -2636,7 +2647,7 @@ a.mail-text:hover, a.public_vk:hover {
     }
 
     .main-nav > ul#sub-nav {
-        margin: 0 !important;
+        margin-left: -50px !important;
         /*padding-left:0;*/
     }
 
@@ -2756,7 +2767,7 @@ a.mail-text:hover, a.public_vk:hover {
     }
 
     ul.nav li a {
-        font-size: 18px !important;
+        font-size: 22px !important;
     }
 
     .main-nav > ul {
@@ -2787,6 +2798,37 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 19% !important;
     }
+
+    .menu_descr
+    {
+        font-size: 22px !important;
+    }
+
+    .toggle-header
+    {
+        font-size: 20px !important;
+    }
+
+    #about p
+    {
+        font-size: 22px;
+    }
+
+    #about ul>li
+    {
+        font-size: 21px;
+    }
+
+    li.list_icon
+    {
+        line-height: 1.5 !important;
+    }
+
+    #contact p
+    {
+        font-size: 22px !important;
+    }
+
 }
 
 @media (min-width: 1401px) and (max-width: 1500px) {
@@ -2803,7 +2845,7 @@ a.mail-text:hover, a.public_vk:hover {
     }
 
     ul.nav li a {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
 
     .main-nav > ul {
@@ -2811,11 +2853,15 @@ a.mail-text:hover, a.public_vk:hover {
         padding-right: 90px !important;
     }
 
+    .events li
+    {
+        font-size: 26px !important;
+    }
+
     .main-nav > ul#sub-nav {
         margin: 0 !important;
         /*padding-left:0;*/
-        padding-left: 140px !important;
-
+     /*   padding-left: 140px !important;*/
     }
 
     #header > .menu-inner {
@@ -2834,6 +2880,22 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 16% !important;
     }
+
+    .menu_descr
+    {
+        font-size: 24px !important;
+    }
+
+    .content p
+    {
+        font-size: 24px !important;
+    }
+
+    .pluses li
+    {
+        font-size: 22px !important;
+        line-height: 1.5 !important;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -2850,7 +2912,7 @@ a.mail-text:hover, a.public_vk:hover {
     }
 
     ul.nav li a {
-        font-size: 18px !important;
+        font-size: 22px !important;
     }
 
     .main-nav > ul {
@@ -2861,6 +2923,7 @@ a.mail-text:hover, a.public_vk:hover {
     .main-nav > ul#sub-nav {
         margin: 0 !important;
         padding-left: 0;
+        margin-left: -69px !important;
     }
 
     #header > .menu-inner {
@@ -2869,6 +2932,26 @@ a.mail-text:hover, a.public_vk:hover {
 
     #header .menu-inner .brand a img {
         padding-left: 50px !important;
+    }
+
+    .main-nav ul li a {
+        padding: 28px 6px !important;
+    }
+
+    .menu_descr
+    {
+        font-size: 24px !important;
+    }
+
+    .content p
+    {
+        font-size: 24px !important;
+    }
+
+    .pluses li
+    {
+        font-size: 22px !important;
+        line-height: 1.5 !important;
     }
 }
 
@@ -4407,12 +4490,12 @@ li.list_icon:before {
 }
 
 .menu_descr {
-    font-size: 18px;
+    font-size: 20px;
 }
 
-.font_size_22
+.font_size_24
 {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 /*@media (max-width: 990px) {
