@@ -381,19 +381,19 @@ CSS3 ANIMATIONS  PRELOADER CIRCLE
 
 /* Placeholder css */
 ::-webkit-input-placeholder {
-    color: #727272;
+    color:#a5a5a5;
 }
 
 :-moz-placeholder {
-    color: #727272; /* Firefox 18- */
+    color:#a5a5a5;/* Firefox 18- */
 }
 
 ::-moz-placeholder {
-    color: #727272; /* Firefox 19+ */
+    color:#a5a5a5; /* Firefox 19+ */
 }
 
 :-ms-input-placeholder {
-    color: #727272;
+    color:#a5a5a5;
 }
 
 /* // Placeholder css */
@@ -2059,7 +2059,7 @@ a.mail-text:hover, a.public_vk:hover {
     margin-bottom: 10px;
     border-radius: 3px;
     font-size: 13px;
-    color: #727272;
+    color:#a5a5a5;
     padding-left: 10px;
 }
 
@@ -2076,7 +2076,7 @@ a.mail-text:hover, a.public_vk:hover {
     margin-bottom: 10px;
     border-radius: 3px;
     font-size: 13px;
-    color: #727272;
+    color:#a5a5a5;
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -2129,7 +2129,7 @@ a.mail-text:hover, a.public_vk:hover {
     line-height: 45px;
     padding-left: 10px;
     font-size: 16px;
-    color: #a5a5a5;
+    color: #000;
     background-color: rgba(0, 0, 0, 0.1);
     border: transparent;
     border-radius: 3px;
@@ -2144,7 +2144,7 @@ a.mail-text:hover, a.public_vk:hover {
     padding: 8px;
     height: 145px;
     font-size: 16px;
-    color: #a5a5a5;
+    color: #000;
     background-color: rgba(0, 0, 0, 0.1);
     border: transparent;
     margin: 4px 0px 12px 0px;
@@ -4479,6 +4479,11 @@ li.list_icon {
     font-size: 16px;
 }
 
+.font_size_18
+{
+    font-size: 18px;
+}
+
 li.list_icon:before {
     content: "\f00c";
     font-family: FontAwesome;
@@ -4506,3 +4511,30 @@ li.list_icon:before {
         z-index: 999999;
     }
 }*/
+
+.done {
+    background: #dff0d8;
+    border: 1px solid #d6e9c6;
+    font-size: 18px;
+    width: 100%;
+    color: #468847;
+    margin-top:30px;
+    margin: 0 auto;
+    display: none;
+    padding: 10px 5px;
+}
+
+.loading {
+    float: right;
+    background: url(../../img/progress.gif) no-repeat 1px;
+    height: 31px;
+    width: 31px;
+    display: none;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.element .error {
+    border: 2px solid #C41431 !important;
+    background: url(../../img/iconCaution.png) no-repeat 98% 50%;
+}

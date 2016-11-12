@@ -498,6 +498,113 @@ $('.modal').click(function () {
     video_containers.html(video_containers.html());
 });
 
+function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
+function isPhoneLengthEnough(phoneNumber)
+{
+    return phoneNumber.length == 11;
+}
+
+function validateOnlyNumbers(phoneNumber) {
+    var theEvent = phoneNumber || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode(key);
+    var phone_number = $('input[name=phone_number]').val();
+    var regex = /[0-9]|\./;
+    if (!regex.test(key) || isPhoneLengthEnough(phone_number)) {
+        theEvent.returnValue = false;
+        if (theEvent.preventDefault) theEvent.preventDefault();
+    }
+}
+
+
+$('#submit').click(function () {
+
+    //Get the data from all the fields
+    var name = $('input[name=name]');
+    var email = $('input[name=email]');
+    var phone_number = $('input[name=phone_number]');
+    var comment = $('textarea[name=comment]');
+    var returnError = false;
+
+    //Simple validation to make sure user entered something
+    //Add your own error checking here with JS, but also do some error checking with PHP.
+    //If error found, add hightlight class to the text field
+    if (name.val() == '') {
+        name.addClass('error');
+        returnError = true;
+    } else name.removeClass('error');
+
+    if (email.val() != '' && !validateEmail(email.val())) {
+        email.addClass('error');
+        returnError = true;
+    }
+    else email.removeClass('error');
+
+    console.log("comment: " + comment.val());
+    if (comment.val() == '') {
+        console.log("empty comment");
+        comment.addClass('error');
+        returnError = true;
+    } else comment.removeClass('error');
+
+    // Highlight all error fields, then quit.
+    if (returnError == true) {
+        return false;
+    }
+
+    //organize the data
+    var data = 'name=' + name.val() + '&email=' + email.val() + '&phone_number=' +
+        phone_number.val() + '&comment=' + encodeURIComponent(comment.val());
+
+    console.log("come after oraniaze");
+    //disabled all the text fields
+    $('.text').attr('disabled', 'true');
+
+    console.log("disabled");
+
+    //show the loading sign
+    $('.loading').show();
+
+    console.log("come to ajax");
+    //start the ajax
+    $.ajax({
+        //this is the php file that processes the data and sends email
+        url: "process.php",
+
+        //GET method is used
+        type: "GET",
+
+        //pass the data
+        data: data,
+
+        //Do not cache the page
+        cache: false,
+
+        //success
+        success: function (html) {
+            //if process.php returned 1/true (send mail success)
+            /*  if (html == 1) {*/
+            //hide the form
+            $('.cont_form').fadeOut('slow');
+
+            //show the success message
+            $('.done').fadeIn('slow');
+
+            //if process.php returned 0/false (send mail failed)
+            /* } else alert('Sorry, unexpected error. Please try again later.');*/
+            /*} else alert(html);*/
+        }
+    });
+
+    //cancel the submit button default behaviours
+    return false;
+
+});
+
 
 
 //map click
