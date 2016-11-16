@@ -68,7 +68,7 @@ jQuery(document).ready(function ($) {
     $("#mainheader").click(function (e) {
         e.preventDefault();
     });
-    $(".nav-link").click(function (e) {
+    $(".nav-link, .out_of_menu_navigation").click(function (e) {
         e.preventDefault();
     });
 //on page load show from hash index.html#about
@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) {
         hash = type[1];
     }
 
-    if (hash != "") {
+/*    if (hash != "") {
         var hash_fullname = "#" + hash;
         $("a[href='" + hash_fullname + "']").addClass('selected');
         if (hash_fullname == "#home") {
@@ -109,12 +109,12 @@ jQuery(document).ready(function ($) {
         });//	scrollto close
         window.location.hash = ''; // for older browsers, leaves a # behind
         history.pushState('', document.title, window.location.pathname); // nice and clean
-    }// hash!="" close
+    }// hash!="" close*/
 
 
 // on click navigation 
     /*********************************************************************************/
-    $('.main-nav a.nav-link,a.nav-link').click(function () {
+    $('.main-nav a.nav-link,a.nav-link, .out_of_menu_navigation').click(function () {
         var width = window.width;
         var name = $(this).attr('href');
         if (name != "#") { // if navigation not equalt to "#"
@@ -127,8 +127,18 @@ jQuery(document).ready(function ($) {
             }
             else {
                 if (name != "") {
-                    $('.selected').removeClass('selected');
-                    $("a[href='" + name + "']").addClass('selected');
+                    if ("#new_events" == name)
+                    {
+                        $('.selected').removeClass('selected');
+                        name = '#events';
+                        $("a[href='" + name + "']").addClass('selected');
+                    }
+                    else
+                    {
+                        $('.selected').removeClass('selected');
+                        $("a[href='" + name + "']").addClass('selected');
+                    }
+
                     $('#mainheader').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 600);
                     Animation("#mainheader", "fadinUp", "200");
                 }
@@ -168,13 +178,13 @@ jQuery(document).ready(function ($) {
 
 
 // on hash change 
-    window.onhashchange = function () {
+  /*  window.onhashchange = function () {
         $('.selected').removeClass('selected');
         var hash = window.location.hash;
         if (hash != "") {
             $("a[href='" + hash + "']").addClass('selected');
         }
-    }
+    }*/
 
 // on click navigation add class selected
     $("#header ul.nav li a").click(function () {
@@ -182,11 +192,12 @@ jQuery(document).ready(function ($) {
         $(this).attr('class', 'nav-link selected');
     });
 
+
 // on external and internal page link 
-    $('.link').click(function () {
+/*    $('.link').click(function () {
         var name = $(this).attr('href');
         window.location.href = name;
-    });
+    });*/
 
     $('a.external-link').click(function () {
         return !window.open(this);

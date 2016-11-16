@@ -99,6 +99,11 @@
     width: 45% !important;
 }
 
+.new_events_gallery li
+{
+    width: 35% !important;
+}
+
 
 .three_half .portfolio-grid li, .three_half #portfolio-grid li {
     width: 33%;

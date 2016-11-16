@@ -629,11 +629,7 @@ Horzontal settings
 }
 
 li a:hover {
-    color: #ffffff;
-    transition: 0.5s;
-    -moz-transition: 0.5s; /* Firefox 4 */
-    -webkit-transition: 0.5s; /* Safari and Chrome */
-    -o-transition: 0.5s; /* Opera */
+    color: #c96f00;
     text-decoration: none;
 }
 
@@ -2626,6 +2622,11 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 27% !important;
     }
+
+    .new_events_gallery
+    {
+        margin-left: 423px !important;
+    }
 }
 
 @media (min-width: 1851px) and (max-width: 2000px) {
@@ -2663,6 +2664,11 @@ a.mail-text:hover, a.public_vk:hover {
 
     .events_gallery {
         left: 25% !important;
+    }
+
+    .new_events_gallery
+    {
+        margin-left: 405px !important;
     }
 }
 
@@ -2708,6 +2714,11 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 23% !important;
     }
+
+    .new_events_gallery
+    {
+        margin-left: 385px !important;
+    }
 }
 
 @media (min-width: 1601px) and (max-width: 1750px) {
@@ -2750,6 +2761,11 @@ a.mail-text:hover, a.public_vk:hover {
 
     .events_gallery {
         left: 21% !important;
+    }
+
+    .new_events_gallery
+    {
+        margin-left: 340px !important;
     }
 }
 
@@ -2797,6 +2813,11 @@ a.mail-text:hover, a.public_vk:hover {
 
     .events_gallery {
         left: 19% !important;
+    }
+
+    .new_events_gallery
+    {
+        margin-left: 320px !important;
     }
 
     .menu_descr
@@ -2881,6 +2902,11 @@ a.mail-text:hover, a.public_vk:hover {
         left: 16% !important;
     }
 
+    .new_events_gallery
+    {
+        margin-left: 300px !important;
+    }
+
     .menu_descr
     {
         font-size: 24px !important;
@@ -2953,12 +2979,19 @@ a.mail-text:hover, a.public_vk:hover {
         font-size: 22px !important;
         line-height: 1.5 !important;
     }
+
+
 }
 
 @media (min-width: 1351px) and (max-width: 1400px)
 {
     .events_gallery {
         left: 14% !important;
+    }
+
+    .new_events_gallery
+    {
+        margin-left: 280px !important;
     }
 }
 
@@ -2967,6 +3000,11 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 13% !important;
     }
+
+    .new_events_gallery
+    {
+        margin-left: 270px !important;
+    }
 }
 
 @media (min-width: 1251px) and (max-width: 1300px)
@@ -2974,12 +3012,22 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 11% !important;
     }
+
+    .new_events_gallery
+    {
+        margin-left: 255px !important;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1250px)
 {
     .events_gallery {
         left: 10% !important;
+    }
+
+    .new_events_gallery
+    {
+        margin-left: 245px !important;
     }
 }
 
@@ -3023,6 +3071,11 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 8% !important;
     }
+
+    .new_events_gallery
+    {
+        margin-left: 230px !important;
+    }
 }
 
 @media (min-width: 1101px) and (max-width: 1150px) {
@@ -3062,6 +3115,11 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 7% !important;
     }
+
+    .new_events_gallery
+    {
+        margin-left: 220px !important;
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1100px) {
@@ -3099,6 +3157,12 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 6% !important;
     }
+
+
+    .new_events_gallery
+    {
+        margin-left: 210px !important;
+    }
 }
 
 @media (min-width: 950px) and (max-width: 992px)
@@ -3111,6 +3175,12 @@ a.mail-text:hover, a.public_vk:hover {
 
     .events_gallery {
         left: 11% !important;
+    }
+
+
+    .new_events_gallery
+    {
+        margin-left: 200px !important;
     }
 }
 
@@ -3125,6 +3195,12 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 11% !important;
     }
+
+
+    .new_events_gallery
+    {
+        margin-left: 190px !important;
+    }
 }
 
 @media (min-width: 850px) and (max-width: 899px)
@@ -3138,6 +3214,12 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 11% !important;
     }
+
+
+    .new_events_gallery
+    {
+        margin-left: 180px !important;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 849px)
@@ -3150,6 +3232,11 @@ a.mail-text:hover, a.public_vk:hover {
 
     .events_gallery {
         left: 11% !important;
+    }
+
+    .new_events_gallery
+    {
+        margin-left: 170px !important;
     }
 }
 
@@ -3204,6 +3291,11 @@ a.mail-text:hover, a.public_vk:hover {
     .events_gallery {
         left: 11% !important;
     }
+
+    .new_events_gallery
+    {
+        margin-left: 160px !important;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
@@ -3255,6 +3347,11 @@ a.mail-text:hover, a.public_vk:hover {
 
     .events_gallery {
         left: 11% !important;
+    }
+
+    .new_events_gallery
+    {
+        margin-left: 150px !important;
     }
 }
 
@@ -3310,6 +3407,11 @@ a.mail-text:hover, a.public_vk:hover {
 
     .events_gallery {
         left: 0% !important;
+    }
+
+    .new_events_gallery
+    {
+        margin-left: 140px !important;
     }
 }
 
