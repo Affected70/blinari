@@ -61,7 +61,6 @@ jQuery(document).ready(function ($) {
     "use strict";
 
 
-
     $("#header").click(function (e) {
         e.preventDefault();
     });
@@ -80,36 +79,36 @@ jQuery(document).ready(function ($) {
         hash = type[1];
     }
 
-/*    if (hash != "") {
-        var hash_fullname = "#" + hash;
-        $("a[href='" + hash_fullname + "']").addClass('selected');
-        if (hash_fullname == "#home") {
-            // hiding subpage header
-            $('#header').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 1000);
-            Animation("#header", "fadeOutUp", "200");
-        }
-        else {
-            // hiding Home page header
-            $('#mainheader').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 600);
-            Animation("#mainheader", "fadinUp", "200");
-        }
+    /*    if (hash != "") {
+     var hash_fullname = "#" + hash;
+     $("a[href='" + hash_fullname + "']").addClass('selected');
+     if (hash_fullname == "#home") {
+     // hiding subpage header
+     $('#header').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 1000);
+     Animation("#header", "fadeOutUp", "200");
+     }
+     else {
+     // hiding Home page header
+     $('#mainheader').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 600);
+     Animation("#mainheader", "fadinUp", "200");
+     }
 
-        $('#wrapper').scrollTo(hash_fullname, 2000, {
-            easing: 'easeInOutExpo', axis: 'x', onAfter: function () { // scrollto callback  function
-                if (hash_fullname == "#home") { // for home page animation
-                    //	Homepage_Animation();
-                }
-                else { // sub page animation
-                    if ($('#header').is(':hidden')) { // if header is hidden then do animation
-                        Subpage_animation();
-                    }
-                }
-            } // scrollto callback function close
+     $('#wrapper').scrollTo(hash_fullname, 2000, {
+     easing: 'easeInOutExpo', axis: 'x', onAfter: function () { // scrollto callback  function
+     if (hash_fullname == "#home") { // for home page animation
+     //	Homepage_Animation();
+     }
+     else { // sub page animation
+     if ($('#header').is(':hidden')) { // if header is hidden then do animation
+     Subpage_animation();
+     }
+     }
+     } // scrollto callback function close
 
-        });//	scrollto close
-        window.location.hash = ''; // for older browsers, leaves a # behind
-        history.pushState('', document.title, window.location.pathname); // nice and clean
-    }// hash!="" close*/
+     });//	scrollto close
+     window.location.hash = ''; // for older browsers, leaves a # behind
+     history.pushState('', document.title, window.location.pathname); // nice and clean
+     }// hash!="" close*/
 
 
 // on click navigation 
@@ -117,53 +116,61 @@ jQuery(document).ready(function ($) {
     $('.main-nav a.nav-link,a.nav-link, .out_of_menu_navigation').click(function () {
         var width = window.width;
         var name = $(this).attr('href');
-        if (name != "#") { // if navigation not equalt to "#"
+        console.log("name: " + name);
+        if (name == "#memorial")
+        {
+            console.log("Memorial");
+            window.open("Memorial_menu.pdf");
+        }
+        else {
 
-            if (name == "#home") {
-                $('.selected').removeClass('selected');
-                $("a[href='" + name + "']").addClass('selected');
-                $('#header').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 1000);
-                Animation("#header", "fadeOutUp", "200");
-            }
-            else {
-                if (name != "") {
-                    if ("#new_events" == name)
-                    {
-                        $('.selected').removeClass('selected');
-                        name = '#events';
-                        $("a[href='" + name + "']").addClass('selected');
-                    }
-                    else
-                    {
-                        $('.selected').removeClass('selected');
-                        $("a[href='" + name + "']").addClass('selected');
-                    }
-
-                    $('#mainheader').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 600);
-                    Animation("#mainheader", "fadinUp", "200");
+            if (name != "#")
+            { // if navigation not equalt to "#"
+                if (name == "#home") {
+                    $('.selected').removeClass('selected');
+                    $("a[href='" + name + "']").addClass('selected');
+                    $('#header').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 1000);
+                    Animation("#header", "fadeOutUp", "200");
                 }
-            }
+                else {
+                    if (name != "") {
+                        if ("#new_events" == name) {
+                            $('.selected').removeClass('selected');
+                            name = '#events';
+                            $("a[href='" + name + "']").addClass('selected');
+                        }
+                        else {
+                            $('.selected').removeClass('selected');
+                            $("a[href='" + name + "']").addClass('selected');
+                        }
+
+                        $('#mainheader').hide('fade', {direction: 'left', easing: 'easeInQuad'}, 600);
+                        Animation("#mainheader", "fadinUp", "200");
+                    }
+                }
 
 //	scrollto start
-            $('#wrapper').scrollTo($(this).attr('href'), horizontal_scroll_speed, {
-                easing: 'easeInOutExpo', axis: 'x', onAfter: function () { // scrollto callback  function
+                $('#wrapper').scrollTo($(this).attr('href'), horizontal_scroll_speed, {
+                    easing: 'easeInOutExpo', axis: 'x', onAfter: function () { // scrollto callback  function
 
-                    if (name == "#home" && width > 991) { // for home page animation
-                        Homepage_Animation();
-                        $("a[href='#home']").addClass('selected');
-                    }
-                    else { // sub page animation
-                        if ($('#header').is(':hidden')) {
-                            Subpage_animation();
+                        if (name == "#home" && width > 991) { // for home page animation
+                            Homepage_Animation();
+                            $("a[href='#home']").addClass('selected');
                         }
-                    } // else close
+                        else { // sub page animation
+                            if ($('#header').is(':hidden')) {
+                                Subpage_animation();
+                            }
+                        } // else close
 
-                } // scrollto callback function close
+                    } // scrollto callback function close
 
-            });//	scrollto close
-            window.location.hash = ''; // for older browsers, leaves a # behind
-            history.pushState('', document.title, window.location.pathname); // nice and clean
-        } // if navigation not equalt to "#" end
+                });//	scrollto close
+                window.location.hash = ''; // for older browsers, leaves a # behind
+                history.pushState('', document.title, window.location.pathname); // nice and clean
+            }
+        }
+        // if navigation not equalt to "#" end
     }); // navigation click end
 
 
@@ -178,13 +185,13 @@ jQuery(document).ready(function ($) {
 
 
 // on hash change 
-  /*  window.onhashchange = function () {
-        $('.selected').removeClass('selected');
-        var hash = window.location.hash;
-        if (hash != "") {
-            $("a[href='" + hash + "']").addClass('selected');
-        }
-    }*/
+    /*  window.onhashchange = function () {
+     $('.selected').removeClass('selected');
+     var hash = window.location.hash;
+     if (hash != "") {
+     $("a[href='" + hash + "']").addClass('selected');
+     }
+     }*/
 
 // on click navigation add class selected
     $("#header ul.nav li a").click(function () {
@@ -194,10 +201,10 @@ jQuery(document).ready(function ($) {
 
 
 // on external and internal page link 
-/*    $('.link').click(function () {
-        var name = $(this).attr('href');
-        window.location.href = name;
-    });*/
+    /*    $('.link').click(function () {
+     var name = $(this).attr('href');
+     window.location.href = name;
+     });*/
 
     $('a.external-link').click(function () {
         return !window.open(this);
@@ -223,8 +230,8 @@ jQuery(document).ready(function ($) {
             autoClose: !0
             /*showSplash: true,*/
             /*splashFunction: function () {
-               /!* $("#circle").delay(1250).animate({opacity: 1}, 700, "linear");*!/
-            }*/
+             /!* $("#circle").delay(1250).animate({opacity: 1}, 700, "linear");*!/
+             }*/
         });
 //Preloader end
 
@@ -250,7 +257,6 @@ jQuery(document).ready(function ($) {
         $(".contentscroll").getNiceScroll().resize();
     });
 // niceScroll Bar options end
-
 
 
 //  FIT VID Video for Responsive purpose */
@@ -286,14 +292,13 @@ jQuery(document).ready(function ($) {
 
             scroll.animate({
                 scrollTop: this.offsetTop
-            }, 2000, function()
-            {
+            }, 2000, function () {
                 scroll.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
             });
 
             // Stop the animation if the user scrolls. Defaults on .stop() should be fine
-            scroll.bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
-                if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel"){
+            scroll.bind("scroll mousedown DOMMouseScroll mousewheel keyup", function (e) {
+                if (e.which > 0 || e.type === "mousedown" || e.type === "mousewheel") {
                     scroll.stop().unbind('scroll mousedown DOMMouseScroll mousewheel keyup'); // This identifies the scroll as a user action, stops the animation, then unbinds the event straight after (optional)
                 }
             });
@@ -318,14 +323,14 @@ jQuery(document).ready(function ($) {
      *************************************************************/
 
     jQuery("area[data-rel^='prettyPhoto']").prettyPhoto();
-    jQuery("#portfolio-grid:first a[data-rel^='prettyPhoto'], .portfolio-grid:first a[data-rel^='prettyPhoto']").prettyPhoto({
+    jQuery("#portfolio-grid:first a[data-rel^='prettyPhoto'], .portfolio-grid:first a[data-rel^='prettyPhoto'], .events_photo:first a[data-rel^='prettyPhoto']").prettyPhoto({
         animation_speed: 'normal',
         theme: 'pp_default',
         slideshow: 3000,
         autoplay_slideshow: false,
         deeplinking: false
     });
-    jQuery(".portfolio-grid:gt(0) a[data-rel^='prettyPhoto']").prettyPhoto({
+    jQuery(".portfolio-grid:gt(0) a[data-rel^='prettyPhoto'], .events_photo:gt(0) a[data-rel^='prettyPhoto']").prettyPhoto({
         animation_speed: 'normal',
         slideshow: 3000,
         deeplinking: false
@@ -347,7 +352,7 @@ jQuery(document).ready(function ($) {
 
 
     //mixitup Portfolio filters
-    $('#portfolio-grid, .portfolio-grid').mixitup({
+    $('#portfolio-grid, .portfolio-grid, .events_photo').mixitup({
         effects: ['fade', 'scale'],
         easing: 'snap'
     });
@@ -489,8 +494,7 @@ $(window).load(function () {
 
     var width = window.width;
 
-    if (width <= 800)
-    {
+    if (width <= 800) {
         document.getElementById("map_canvas").remove();
     }
 
@@ -514,8 +518,7 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-function isPhoneLengthEnough(phoneNumber)
-{
+function isPhoneLengthEnough(phoneNumber) {
     return phoneNumber.length == 11;
 }
 
@@ -615,7 +618,6 @@ $('#submit').click(function () {
     return false;
 
 });
-
 
 
 //map click

@@ -4581,6 +4581,11 @@ li.list_icon {
     font-size: 16px;
 }
 
+.font_size_20
+{
+    font-size: 20px;
+}
+
 .font_size_18
 {
     font-size: 18px;
@@ -4639,4 +4644,15 @@ li.list_icon:before {
 .element .error {
     border: 2px solid #C41431 !important;
     background: url(../../img/iconCaution.png) no-repeat 98% 50%;
+}
+
+.blinari_color
+{
+    color: #c96f00;
+}
+
+.blinari_color:hover
+{
+    color: #C41431;
+    text-decoration: none;
 }
