@@ -46,6 +46,7 @@ var niceScrollautohidemode = true   // Set the niceScroll visible or hidden
 var niceScrollbackground = "#e9e9e9"  // Set your niceScroll rails background color
 var niceScrollhidecursordelay = 2500 // Set your niceScroll rails background color
 var niceScrollhorizrailenabled = false  // Set nicescroll horizontal scroll
+var rating_var;
 
 
 /********************** 1. Configuration / Settings END**********************/
@@ -366,6 +367,9 @@ jQuery(document).ready(function ($) {
     /****************** 8. Portfolio on mouseover opactiy END******************/
 
 
+    var rating_element = document.querySelector('.c-rating');
+    rating_var = rating(rating_element, null, 5, null);
+
 });
 // On Document Ready initialise the options 
 
@@ -537,12 +541,35 @@ function validateOnlyNumbers(phoneNumber) {
 
 $('#submit').click(function () {
 
+    var ratingValue = rating_var.getRating();
+    var returnError = false;
+
+    if (ratingValue == 0 || ratingValue == null)
+    {
+        alert("Пожалуйста, поставьте рейтинг (1-5 звезд).");
+        returnError = true;
+    }
+
+    var mail;
+
+    if (ratingValue < 3)
+    {
+        /*mail = 'affected7000@mail.ru';*/
+        mail = 'blinari@mail.ru';
+    }
+    else
+    {
+        //TODO: change email
+        /*mail = 'affected7000@mail.ru';*/
+        mail = 'blinari@mail.ru';
+    }
+
     //Get the data from all the fields
     var name = $('input[name=name]');
     var email = $('input[name=email]');
     var phone_number = $('input[name=phone_number]');
     var comment = $('textarea[name=comment]');
-    var returnError = false;
+
 
     //Simple validation to make sure user entered something
     //Add your own error checking here with JS, but also do some error checking with PHP.
@@ -558,7 +585,6 @@ $('#submit').click(function () {
     }
     else email.removeClass('error');
 
-    console.log("comment: " + comment.val());
     if (comment.val() == '') {
         console.log("empty comment");
         comment.addClass('error');
@@ -572,18 +598,14 @@ $('#submit').click(function () {
 
     //organize the data
     var data = 'name=' + name.val() + '&email=' + email.val() + '&phone_number=' +
-        phone_number.val() + '&comment=' + encodeURIComponent(comment.val());
+        phone_number.val() + '&comment=' + encodeURIComponent(comment.val()) + '&mail=' + mail + '&rating=' + ratingValue;
 
-    console.log("come after oraniaze");
     //disabled all the text fields
     $('.text').attr('disabled', 'true');
-
-    console.log("disabled");
 
     //show the loading sign
     $('.loading').show();
 
-    console.log("come to ajax");
     //start the ajax
     $.ajax({
         //this is the php file that processes the data and sends email

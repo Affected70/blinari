@@ -43,6 +43,8 @@
     <link rel="stylesheet" href="assets/css/component.css" type="text/css"/>
     <!--Home Tiled Slider End-->
 
+    <link rel="stylesheet" href="assets/css/rating.css" type="text/css"/>
+
     <!-- Vegas Slider-->
     <!--<link rel="stylesheet" href="assets/css/vegas_styles.css" />-->
     <!-- Vegas Slider End-->
@@ -323,12 +325,12 @@
                                 <div class="container">
                                     <div class="prettygalheading clearfix text-center">
                                         <h1>Новая акция!</h1>
-                                        <ul class="no_padding events">
+                                       <!-- <ul class="no_padding events">
                                             <li class="list_icon font_size_24">При покупке на сумму от <strong>350р.</strong> предоставляется одна наклейка. При наличии наклеек в количестве 5 шт подарок: <strong>Блин с ветчиной и сыром</strong> или <strong>Блин с варёной сгущенкой</strong>.
                                                 <br><br>
                                                 <strong>Акция действует с 10.11.16 до 01.01.17.</strong>
                                             </li>
-                                        </ul>
+                                        </ul>-->
 
                                     </div>
                                     <!-- Portfolio Filters -->
@@ -338,10 +340,10 @@
                                 <!-- Portfolio Grid -->
                                 <ul class="portfolio-grid new_events_gallery" class="portfolio-grid text-center">
                                     <li class="mix all food vimeo mix_all">
-                                        <div><img src="img/events/event3.jpg"
+                                        <div><img src="img/events/event10.jpg"
                                                   alt="">
 
-                                            <div class="mask"><a href="img/events/event3.jpg"
+                                            <div class="mask"><a href="img/events/event10.jpg"
                                                                  data-rel="prettyPhoto[gallery2]"
                                                                  class="lightbox info">
                                                 <div class="project-overlay"></div>
@@ -349,10 +351,10 @@
                                         </div>
                                     </li>
                                     <li class="mix all food vimeo mix_all">
-                                        <div><img src="img/events/event4.jpg"
+                                        <div><img src="img/events/event9.jpg"
                                                   alt="">
 
-                                            <div class="mask"><a href="img/events/event4.jpg"
+                                            <div class="mask"><a href="img/events/event9.jpg"
                                                                  data-rel="prettyPhoto[gallery2]"
                                                                  class="lightbox info">
                                                 <div class="project-overlay"></div>
@@ -2123,6 +2125,20 @@
                                                                     <h4>Имбирный эль, чайник</h4>
                                                                 </div>
                                                             </div>
+                                                            <div class="clearfix">
+                                                                <div class="specials-round"><h4>20р</h4></div>
+                                                                <div class="specials-content">
+                                                                    <br>
+                                                                    <h4>Чай "Здоровье" с молоком, стакан</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="clearfix">
+                                                                <div class="specials-round"><h4>15р</h4></div>
+                                                                <div class="specials-content">
+                                                                    <br>
+                                                                    <h4>Чай "Здоровье" без молока, стакан</h4>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -3655,6 +3671,10 @@
                                         </div>
 
                                         <div class="element">
+                                                    <ul class="c-rating"></ul>
+                                        </div>
+
+                                        <div class="element">
                                             <button type="submit" id="submit" value="Send" class="btn submitBtn">
                                                 Отправить
                                             </button>
@@ -3770,11 +3790,13 @@
     <!-- // Contact
 =============================-->
 </div>
-</div>
 <!-- // Wrapper =============================-->
 
 
 <!--java script-->
+<!-- Rating framework http://callmenick.com/post/five-star-rating-component-with-javascript-css -->
+<script type="text/javascript" src="assets/js/rating.min.js"></script>
+
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <!-- Form Validation-->
 <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>

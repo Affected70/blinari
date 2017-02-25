@@ -8,6 +8,8 @@ $name = ($_GET['name']) ? $_GET['name']	 : $_POST['name'];
 $email = ($_GET['email']) ?$_GET['email'] : $_POST['email'];
 $phone_number = ($_GET['phone_number']) ?$_GET['phone_number'] : $_POST['phone_number'];
 $comment = ($_GET['comment']) ?$_GET['comment'] : $_POST['comment'];
+$mail = ($_GET['mail']) ?$_GET['mail'] : $_POST['mail'];
+$rating = ($_GET['rating']) ?$_GET['rating'] : $_POST['rating'];
 
 //flag to indicate which method it uses. If POST set it to 1
 if ($_POST) $post=1;
@@ -26,10 +28,11 @@ $message = '
 <head></head>
 <body>
 <table>
-    <tr><td>Имя</td><td>' . $name . '</td></tr>
-    <tr><td>Email</td><td>' . $email . '</td></tr>
-    <tr><td>Телефон</td><td>' . $phone_number . '</td></tr>
-    <tr><td>Сообщение</td><td>' . nl2br($comment) . '</td></tr>
+    <tr><td>Имя: </td><td>' . $name . '</td></tr>
+    <tr><td>Email: </td><td>' . $email . '</td></tr>
+    <tr><td>Телефон: </td><td>' . $phone_number . '</td></tr>
+    <tr><td>Сообщение: </td><td>' . nl2br($comment) . '</td></tr>
+    <tr><td>Рейтинг: </td><td>' . $rating . '</td></tr>
 </table>
 </body>
 </html>';
@@ -39,13 +42,22 @@ $message = '
 require_once "SendMailSmtpClass.php"; // подключаем класс
 
 $mailSMTP = new SendMailSmtpClass('blinari.no-reply@mail.ru', 'Ssirius1', 'ssl://smtp.mail.ru', 'Blinari', 465); // создаем экземпляр класса
+
 // $mailSMTP = new SendMailSmtpClass('логин', 'пароль', 'хост', 'имя отправителя');
 
 // заголовок письма
 $headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $headers .= "From: blinari.no-reply@mail.ru\r\n"; // от кого письмо !!! тут e-mail, через который происходит авторизация
-$result =  $mailSMTP->send('blinari@mail.ru', $subject, $message, $headers); // отправляем письмо
+$headers .= "Reply-To: blinari.no-reply@mail.ru\r\n";
+$headers .= "Return-Path: blinari.no-reply@mail.ru\r\n";
+$headers .= "CC: blinari.no-reply@mail.ru\r\n";
+$headers .= "BCC: blinari.no-reply@mail.ru\r\n";
+
+
+//$result =  $mailSMTP->send('blinari@mail.ru', $subject, $message, $headers); // отправляем письмо
+
+$result =  $mailSMTP->send($mail, $subject, $message, iconv ('utf-8', 'windows-1251', $headers)); // отправляем письмо
 // $result =  $mailSMTP->send('Кому письмо', 'Тема письма', 'Текст письма', 'Заголовки письма');
 //if($result === true){
 //    return 1;
