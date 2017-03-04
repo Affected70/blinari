@@ -554,12 +554,11 @@ $('#submit').click(function () {
 
     if (ratingValue < 3)
     {
-        /*mail = 'affected7000@mail.ru';*/
-        mail = 'blinari@mail.ru';
+        /*mail = 'affected70@yandex.ru';*/
+        mail = 'svetlan-chirkova@yandex.ru';
     }
     else
     {
-        //TODO: change email
         /*mail = 'affected7000@mail.ru';*/
         mail = 'blinari@mail.ru';
     }

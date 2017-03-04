@@ -10,6 +10,7 @@ $phone_number = ($_GET['phone_number']) ?$_GET['phone_number'] : $_POST['phone_n
 $comment = ($_GET['comment']) ?$_GET['comment'] : $_POST['comment'];
 $mail = ($_GET['mail']) ?$_GET['mail'] : $_POST['mail'];
 $rating = ($_GET['rating']) ?$_GET['rating'] : $_POST['rating'];
+$config['smtp_charset'] = 'utf-8';	//кодировка сообщений. (windows-1251 или utf-8, итд)
 
 //flag to indicate which method it uses. If POST set it to 1
 if ($_POST) $post=1;
@@ -41,18 +42,26 @@ $message = '
 // пример использования
 require_once "SendMailSmtpClass.php"; // подключаем класс
 
-$mailSMTP = new SendMailSmtpClass('blinari.no-reply@mail.ru', 'Ssirius1', 'ssl://smtp.mail.ru', 'Blinari', 465); // создаем экземпляр класса
+if ($rating < 3)
+   $mailSMTP = new SendMailSmtpClass('blinari.no-reply@yandex.ru', 'Ssirius1', 'ssl://smtp.yandex.ru', 'Blinari', 465); // создаем экземпляр класса
+else
+   $mailSMTP = new SendMailSmtpClass('blinari.no-reply@mail.ru', 'Ssirius1', 'ssl://smtp.mail.ru', 'Blinari', 465); // создаем экземпляр класса
+
+
 
 // $mailSMTP = new SendMailSmtpClass('логин', 'пароль', 'хост', 'имя отправителя');
 
 // заголовок письма
 $headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+//$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+$headers .= "Content-Type: text/html; charset=\"".$config['smtp_charset']."\"\r\n";
+$headers .= "Content-Transfer-Encoding: 8bit\r\n";
 $headers .= "From: blinari.no-reply@mail.ru\r\n"; // от кого письмо !!! тут e-mail, через который происходит авторизация
 $headers .= "Reply-To: blinari.no-reply@mail.ru\r\n";
 $headers .= "Return-Path: blinari.no-reply@mail.ru\r\n";
 $headers .= "CC: blinari.no-reply@mail.ru\r\n";
 $headers .= "BCC: blinari.no-reply@mail.ru\r\n";
+$headers .= "X-Priority: 3\r\n\r\n";
 
 
 //$result =  $mailSMTP->send('blinari@mail.ru', $subject, $message, $headers); // отправляем письмо

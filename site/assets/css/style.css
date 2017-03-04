@@ -4656,3 +4656,56 @@ li.list_icon:before {
     color: #C41431;
     text-decoration: none;
 }
+
+.insta-icon {
+    position: relative;
+    width: 22.42px;
+    height: 20px;
+    border-radius: 20%;
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+}
+.insta-icon:after,
+.insta-icon:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%);
+    content: ''
+}
+.insta-icon:before {
+    border-radius: 20%
+}
+.insta-icon:after {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%
+}
+
+a.public_instagramm {
+    margin-left: 33px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #545454;
+    text-transform: uppercase;
+}
+
+a.public_instagramm:hover {
+    text-decoration: none;
+    color: #d62f82;
+}
+
+.mail-text i, .public_instagramm i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #f32a2a;
+}
+
+.blinari_mail
+{
+    margin-left: 1px;
+}
