@@ -554,7 +554,7 @@ $('#submit').click(function () {
 
     if (ratingValue < 3)
     {
-        /*mail = 'affected70@yandex.ru';*/
+        /*mail = 'affected70@yandex.ru'; test*/
         mail = 'svetlan-chirkova@yandex.ru';
     }
     else
