@@ -439,6 +439,18 @@ ul.nav li a {
     text-decoration: none;
 }
 
+.slicknav-parent .nav-link :hover {
+    background: rgba(255, 255, 255, .3) !important;
+}
+
+
+
+/*.nav-link-selected
+{
+    background: none;
+}*/
+
+
 .slicknav_nav li ul li a:hover {
     background: rgba(201, 111, 0, 1);
     color: #EFE6DD;

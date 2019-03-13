@@ -56,11 +56,21 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
 //$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $headers .= "Content-Type: text/html; charset=\"".$config['smtp_charset']."\"\r\n";
 $headers .= "Content-Transfer-Encoding: 8bit\r\n";
-$headers .= "From: blinari.no-reply@mail.ru\r\n"; // от кого письмо !!! тут e-mail, через который происходит авторизация
-$headers .= "Reply-To: blinari.no-reply@mail.ru\r\n";
-$headers .= "Return-Path: blinari.no-reply@mail.ru\r\n";
-$headers .= "CC: blinari.no-reply@mail.ru\r\n";
-$headers .= "BCC: blinari.no-reply@mail.ru\r\n";
+if ($rating < 3) {
+    $headers .= "From: blinari.no-reply@yandex.ru\r\n"; // от кого письмо !!! тут e-mail, через который происходит авторизация
+    $headers .= "Reply-To: blinari.no-reply@yandex.ru\r\n";
+    $headers .= "Return-Path: blinari.no-reply@yandex.ru\r\n";
+    $headers .= "CC: blinari.no-reply@yandex.ru\r\n";
+    $headers .= "BCC: blinari.no-reply@yandex.ru\r\n";
+}
+else {
+    $headers .= "From: blinari.no-reply@mail.ru\r\n"; // от кого письмо !!! тут e-mail, через который происходит авторизация
+    $headers .= "Reply-To: blinari.no-reply@mail.ru\r\n";
+    $headers .= "Return-Path: blinari.no-reply@mail.ru\r\n";
+    $headers .= "CC: blinari.no-reply@mail.ru\r\n";
+    $headers .= "BCC: blinari.no-reply@mail.ru\r\n";
+ }
+
 $headers .= "X-Priority: 3\r\n\r\n";
 
 

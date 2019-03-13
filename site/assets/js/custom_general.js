@@ -14,14 +14,115 @@
 
 /*****************************************************************************
  1. Configurations or Settings
- ******************************************************************************/
+ *******************************************************************************/
 $(function () {
     $('#sub-nav').slicknav({
         label: '',
         duration: 1000,
         easingOpen: "easeOutQuint", //available with jQuery UI
         closeOnClick: true,
+        allowParentLinks: true,
     });
+});
+
+$('#submit').click(function () {
+    var ratingValue = rating_var.getRating();
+    var returnError = false;
+
+    if (ratingValue == 0 || ratingValue == null)
+    {
+        alert("Пожалуйста, поставьте рейтинг (1-5 звезд).");
+        returnError = true;
+    }
+
+    var mail;
+
+    if (ratingValue < 3)
+    {
+    /*    mail = 'affected70@yandex.ru';*/
+         mail = 'svetlan-chirkova@yandex.ru';
+    }
+    else
+    {
+    /*    mail = 'affected7000@mail.ru';*/
+        mail = 'blinari@mail.ru';
+    }
+
+    //Get the data from all the fields
+    var name = $('input[name=name]');
+    var email = $('input[name=email]');
+    var phone_number = $('input[name=phone_number]');
+    var comment = $('textarea[name=comment]');
+
+
+    //Simple validation to make sure user entered something
+    //Add your own error checking here with JS, but also do some error checking with PHP.
+    //If error found, add hightlight class to the text field
+    if (name.val() == '') {
+        name.addClass('error');
+        returnError = true;
+    } else name.removeClass('error');
+
+    if (email.val() != '' && !validateEmail(email.val())) {
+        email.addClass('error');
+        returnError = true;
+    }
+    else email.removeClass('error');
+
+    if (comment.val() == '') {
+        console.log("empty comment");
+        comment.addClass('error');
+        returnError = true;
+    } else comment.removeClass('error');
+
+    // Highlight all error fields, then quit.
+    if (returnError == true) {
+        return false;
+    }
+
+    //organize the data
+    var data = 'name=' + name.val() + '&email=' + email.val() + '&phone_number=' +
+        phone_number.val() + '&comment=' + encodeURIComponent(comment.val()) + '&mail=' + mail + '&rating=' + ratingValue;
+
+    //disabled all the text fields
+    $('.text').attr('disabled', 'true');
+
+    //show the loading sign
+    $('.loading').show();
+
+    //start the ajax
+    $.ajax({
+        //this is the php file that processes the data and sends email
+        url: "process.php",
+
+        //GET method is used
+        type: "GET",
+
+        //pass the data
+        data: data,
+
+        //Do not cache the page
+        cache: false,
+
+        //success
+        success: function (html) {
+            //if process.php returned 1/true (send mail success)
+            /*  if (html == 1) {*/
+            //hide the form
+            $('.cont_form').fadeOut('slow');
+
+            //show the success message
+            $('.done').fadeIn('slow');
+
+            //if process.php returned 0/false (send mail failed)
+            /* } else alert('Sorry, unexpected error. Please try again later.');*/
+            /*} else alert(html);*/
+        }
+    });
+
+    //cancel the submit button default behaviours
+    return false;
+
 });
 //Scroll speed and page animation Scrollto.js parameter
 
@@ -114,7 +215,7 @@ jQuery(document).ready(function ($) {
 
 // on click navigation 
     /*********************************************************************************/
-    $('.main-nav a.nav-link,a.nav-link, .out_of_menu_navigation').click(function () {
+    $('.main-nav a.nav-link,a.nav-link, .out_of_menu_navigation, .slicknav-item, .slicknav-parent').click(function () {
         var width = window.width;
         var name = $(this).attr('href');
         console.log("name: " + name);
@@ -490,7 +591,7 @@ $(window).load(function () {
      .removeClass()
      .addClass('bgwidth');*!/
      }
-     }*/
+     } */
 
     theWindow.resize(function () {
         /*  resizeBg();*/
@@ -502,8 +603,11 @@ $(window).load(function () {
         document.getElementById("map_canvas").remove();
     }
 
-});
 
+    var appCache = window.applicationCache;
+    appCache.update();
+
+});
 
 /*   Spmenu video Stop On Click Close Button  */
 
@@ -539,8 +643,8 @@ function validateOnlyNumbers(phoneNumber) {
 }
 
 
-$('#submit').click(function () {
-
+/*$('#submit33').click(function () {
+    console.log('WTF?');
     var ratingValue = rating_var.getRating();
     var returnError = false;
 
@@ -554,12 +658,12 @@ $('#submit').click(function () {
 
     if (ratingValue < 3)
     {
-        /*mail = 'affected70@yandex.ru';*/
-        mail = 'svetlan-chirkova@yandex.ru';
+        mail = 'affected70@yandex.ru';
+       /!* mail = 'svetlan-chirkova@yandex.ru';*!/
     }
     else
     {
-        /*mail = 'affected7000@mail.ru';*/
+        /!*mail = 'affected7000@mail.ru';*!/
         mail = 'blinari@mail.ru';
     }
 
@@ -622,7 +726,7 @@ $('#submit').click(function () {
         //success
         success: function (html) {
             //if process.php returned 1/true (send mail success)
-            /*  if (html == 1) {*/
+            /!*  if (html == 1) {*!/
             //hide the form
             $('.cont_form').fadeOut('slow');
 
@@ -630,15 +734,15 @@ $('#submit').click(function () {
             $('.done').fadeIn('slow');
 
             //if process.php returned 0/false (send mail failed)
-            /* } else alert('Sorry, unexpected error. Please try again later.');*/
-            /*} else alert(html);*/
+            /!* } else alert('Sorry, unexpected error. Please try again later.');*!/
+            /!*} else alert(html);*!/
         }
     });
 
     //cancel the submit button default behaviours
     return false;
 
-});
+});*/
 
 
 //map click

@@ -8,7 +8,7 @@
 -------------------------------------------------------------- */
 .portfolio {
     padding-bottom: 0;
-    position: absolute;
+/*    position: absolute;*/
     top: 0;
     overflow: hidden;
     min-height: 100%;
@@ -72,7 +72,9 @@
 .events_gallery
 {
     left: 24%;
-    position: absolute!important;
+ /*   position: absolute!important;*/
+    width: 50%;
+    margin: 0 auto;
 }
 
 .portfolio-grid:after,
@@ -196,6 +198,17 @@
         width: 50%;
     }
 
+}
+
+@media (max-width: 600px) {
+    .portfolio .section {
+        margin-top: 80px;
+    }
+
+    .font_size_24
+    {
+        font-size: 20px
+    }
 }
 
 @media (max-width: 479px) {

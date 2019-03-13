@@ -27,6 +27,18 @@ var marker2_Longitude=50.188669
 var marker2_content="<h2>Блинари, кафе-бистро</h2>ул. Советской Армии, 235, Самара, Самарская обл., 443011" // marker or  on click content (Info Window)
 var marker2_pointerUrl = 'assets/img/map-marker.png' // set your color pointer here!
 
+/*//map-marker #3
+var marker3_Latitude=53.186612
+var marker3_Longitude=50.094169
+var marker3_content="<h2>Блинари, кафе-бистро</h2> Ленинградская, 51, Самара, Самарская обл., 443099" // marker or  on click content (Info Window)
+var marker3_pointerUrl = 'assets/img/map-marker.png' // set your color pointer here!
+
+//map-marker #4
+var marker4_Latitude=53.198381
+var marker4_Longitude=50.104597
+var marker4_content="<h2>Блинари, кафе-бистро</h2> Молодогвардейская, 131, Самара, Самарская обл., 443001" // marker or  on click content (Info Window)
+var marker4_pointerUrl = 'assets/img/map-marker.png' // set your color pointer here!*/
+
 //********************* Google MAP END *********************/
 
 
@@ -116,22 +128,43 @@ function map_canvas_loaded() {
 	});
 
 	$('.maptwo').click(function() {
-		var location = new google.maps.LatLng('53.233511','50.192093');
-		console.log(map_canvas);
-		map_canvas.setCenter(location);
-		map_canvas.setZoom(17);
-	});
+        var location = new google.maps.LatLng('53.233511','50.192093');
+        console.log(map_canvas);
+        map_canvas.setCenter(location);
+        map_canvas.setZoom(17);
+    });
+
+/*    $('.mapthree').click(function() {
+        var location = new google.maps.LatLng('53.187273','50.098256');
+        console.log(map_canvas);
+        map_canvas.setCenter(location);
+        map_canvas.setZoom(17);
+    });
+
+    $('.mapfour').click(function() {
+        var location = new google.maps.LatLng('53.198171','50.108012');
+        console.log(map_canvas);
+        map_canvas.setCenter(location);
+        map_canvas.setZoom(17);
+    });*/
 
 //	map_canvas.setCenter("53.233910,50.191160");
 //	map_canvas.setPosition("53.23315402,50.18831328");
+/*
+	 $('#testMap').click(function() { //test_get Center map
+	 	var myLat = map_canvas.getCenter().lat();
+	 	var myLng = map_canvas.getCenter().lng();
 
-	// $('#testMap').click(function() { //test_get Center map
-	// 	var myLat = map_canvas.getCenter().lat();
-	// 	var myLng = map_canvas.getCenter().lng();
-	//
-	// 	console.log("myLat: " + myLat);
-	// 	console.log("myLng: " + myLng);
-	// });
+	 	console.log("myLat: " + myLat);
+	 	console.log("myLng: " + myLng);
+	 });
+
+     google.maps.event.addListener(map_canvas, "click", function (event) {
+        var latitude = event.latLng.lat();
+        var longitude = event.latLng.lng();
+        console.log( latitude + ', ' + longitude );
+    }); //end addListener*/
+
 	//****************************************************************************
 	// marker 1 content
 	//****************************************************************************
@@ -177,6 +210,52 @@ function map_canvas_loaded() {
 	var infowindow = new google.maps.InfoWindow(
 		{content:marker2_content });
 	infowindow.open(map_canvas,marker2);
+
+    //****************************************************************************
+    // marker 3 content
+    //****************************************************************************
+   /* var pointer3 = new google.maps.LatLng(marker3_Latitude,marker3_Longitude);
+
+    var marker3= new google.maps.Marker({
+        position : pointer3,
+        map : map_canvas,
+        icon: marker3_pointerUrl //Custom Pointer URL
+    });
+
+    google.maps.event.addListener(marker3,'click',
+        function() {
+            var infowindow = new google.maps.InfoWindow(
+                {content:marker3_content });
+            infowindow.open(map_canvas,marker3);
+        });
+    //marker 3 END
+
+    var infowindow = new google.maps.InfoWindow(
+        {content:marker3_content });
+    infowindow.open(map_canvas,marker3);*/
+
+    //****************************************************************************
+    // marker 4 content
+    //****************************************************************************
+    /*var pointer4 = new google.maps.LatLng(marker4_Latitude,marker4_Longitude);
+
+    var marker4= new google.maps.Marker({
+        position : pointer4,
+        map : map_canvas,
+        icon: marker4_pointerUrl //Custom Pointer URL
+    });
+
+    google.maps.event.addListener(marker4,'click',
+        function() {
+            var infowindow = new google.maps.InfoWindow(
+                {content:marker4_content });
+            infowindow.open(map_canvas,marker4);
+        });
+    //marker 4 END
+
+    var infowindow = new google.maps.InfoWindow(
+        {content:marker4_content });
+    infowindow.open(map_canvas,marker4);*/
 }
 
 window.onload = function() {

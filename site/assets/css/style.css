@@ -423,6 +423,10 @@ CSS3 ANIMATIONS  PRELOADER CIRCLE
     padding-bottom: 20px;
 }
 
+.pad_left18 {
+    padding-left: 18px;
+}
+
 .bold {
     font-family: 'Oswald';
     text-transform: uppercase;
@@ -2585,6 +2589,13 @@ a.mail-text:hover, a.public_vk:hover {
 
 }
 
+#events .portfolio-grid li
+{
+    float: none;
+}
+
+
+
 /*================================ Media Queries ======================================================*/
 @media (min-width: 2001px) and (max-width: 2200px) {
 
@@ -2621,6 +2632,7 @@ a.mail-text:hover, a.public_vk:hover {
 
     .events_gallery {
         left: 27% !important;
+
     }
 
     .new_events_gallery
@@ -2971,7 +2983,7 @@ a.mail-text:hover, a.public_vk:hover {
 
     .content p
     {
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
 
     .pluses li
@@ -3275,7 +3287,7 @@ a.mail-text:hover, a.public_vk:hover {
         padding-right: 5px !important;
     }
 
-    .mapone, .maptwo
+    .mapone, .maptwo, .mapthree, .mapfour
     {
         display: none !important;
     }
@@ -3332,7 +3344,7 @@ a.mail-text:hover, a.public_vk:hover {
         padding-right: 5px !important;
     }
 
-    .mapone, .maptwo
+    .mapone, .maptwo, .mapthree, .mapfour
     {
         display: none !important;
     }
@@ -3389,7 +3401,7 @@ a.mail-text:hover, a.public_vk:hover {
         padding-right: 5px !important;
     }
 
-    .mapone, .maptwo
+    .mapone, .maptwo, .mapthree, .mapfour
     {
         display: none !important;
     }
@@ -3469,7 +3481,7 @@ a.mail-text:hover, a.public_vk:hover {
         padding-right: 5px !important;
     }
 
-    .mapone, .maptwo
+    .mapone, .maptwo, .mapthree, .mapfour
     {
         display: none !important;
     }
@@ -3503,7 +3515,7 @@ a.mail-text:hover, a.public_vk:hover {
     }
 }
 
-@media (min-width: 374px) and (max-width: 500px)
+@media (min-width: 300px) and (max-width: 500px)
 {
     #header .menu-inner .brand a img {
         margin-left: 0px !important;
@@ -3512,8 +3524,10 @@ a.mail-text:hover, a.public_vk:hover {
     }
 
     .events_gallery {
-        left: -5% !important;
-        position: absolute!important;
+       /* left: -5% !important;*/
+        width: auto !important;
+        left: 0 !important;
+
     }
 
     .object {
@@ -4142,8 +4156,8 @@ a.mail-text:hover, a.public_vk:hover {
         width: 80%;
     }
 
-    .price-content {
-        margin-left: 0;
+    div.row.zero_margin_left {
+        margin-left: 0; !important;
     }
 
     .price-round {
@@ -4416,8 +4430,12 @@ a.mail-text:hover, a.public_vk:hover {
     font-family: Barkentina;
     font-size: 14px;
     color: #707070;
-    display: inline;
     margin-top: 4px;
+}
+
+.display-inline
+{
+    display: inline;
 }
 
 .streettwo {
@@ -4429,7 +4447,7 @@ a.mail-text:hover, a.public_vk:hover {
     margin-left: 4px;
 }
 
-.maptwo {
+.maptwo, .mapthree, .mapfour {
     display: inline-block;
     font-family: 'Barkentina';
     font-size: 13px;
@@ -4450,7 +4468,7 @@ a.mail-text:hover, a.public_vk:hover {
     -webkit-border-radius: 5px
 }
 
-.maptwo:hover {
+.maptwo:hover, .mapthree:hover, .mapfour:hover {
     color: #C96F00;
     border: 1px solid #C96F00;
     background: #FAFAFA;
@@ -4459,8 +4477,8 @@ a.mail-text:hover, a.public_vk:hover {
 }
 
 .emailadress {
-    margin-top: 15px;
-    margin-left: 5px;
+    margin-left: 1px;
+    display: inline-block;
 }
 
 .object {
@@ -4597,6 +4615,11 @@ li.list_icon:before {
     margin-right: 10px;
 }
 
+li.list_icon_circle:before {
+    content: "\f192" !important;
+    font-family: FontAwesome;
+}
+
 .no_padding {
     padding: 0;
 }
@@ -4710,4 +4733,29 @@ a.public_instagramm:hover {
     margin-left: 1px;
 }
 
+.inline-block
+{
+    display: inline-block;
+}
 
+.like-p
+{
+    /* font-family: 'Raleway', sans-serif;*/
+    font-size: 20px;
+    font-weight: 400;
+    color: #707070;
+    z-index: 9999999;
+    line-height: 26px;
+}
+
+.pominalnoe_menu
+{
+    font-size: 20px ;
+}
+
+a[href^=tel] { color: inherit; text-decoration: none; }
+
+.font-size-14
+{
+    font-size: 14px !important;
+}

@@ -181,8 +181,11 @@ border-left: 0px solid transparent;
 }
 
 .slicknav_nav li ul li a:hover {
-    background: rgba(201, 111, 0, 1);
+ /*   background: rgba(201, 111, 0, 1);*/
+    background: rgba(255, 255, 255, .3);
+    color: #fff;
 }
+
 
 .slicknav_nav {
     background: rgba(201, 111, 0, 1);
