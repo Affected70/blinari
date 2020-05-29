@@ -21,11 +21,11 @@ var marker1_Longitude=50.090406
 var marker1_content="<h2>Блинари, кафе-бистро</h2> Куйбышева, 98, Самара, Самарская обл., 443099" // marker or  on click content (Info Window)
 var marker1_pointerUrl = 'assets/img/map-marker.png' // set your color pointer here!
 
-//map-marker #2
+/*//map-marker #2
 var marker2_Latitude=53.232982
 var marker2_Longitude=50.188669
 var marker2_content="<h2>Блинари, кафе-бистро</h2>ул. Советской Армии, 235, Самара, Самарская обл., 443011" // marker or  on click content (Info Window)
-var marker2_pointerUrl = 'assets/img/map-marker.png' // set your color pointer here!
+var marker2_pointerUrl = 'assets/img/map-marker.png' // set your color pointer here!*/
 
 /*//map-marker #3
 var marker3_Latitude=53.186612
@@ -127,12 +127,12 @@ function map_canvas_loaded() {
 		map_canvas.setZoom(17);
 	});
 
-	$('.maptwo').click(function() {
+/*	$('.maptwo').click(function() {
         var location = new google.maps.LatLng('53.233511','50.192093');
         console.log(map_canvas);
         map_canvas.setCenter(location);
         map_canvas.setZoom(17);
-    });
+    });*/
 
 /*    $('.mapthree').click(function() {
         var location = new google.maps.LatLng('53.187273','50.098256');
@@ -191,7 +191,7 @@ function map_canvas_loaded() {
 	//****************************************************************************
 	// marker 2 content
 	//****************************************************************************
-	var pointer2 = new google.maps.LatLng(marker2_Latitude,marker2_Longitude);
+	/*var pointer2 = new google.maps.LatLng(marker2_Latitude,marker2_Longitude);
 
 	var marker2= new google.maps.Marker({
 		position : pointer2,
@@ -205,11 +205,11 @@ function map_canvas_loaded() {
 				{content:marker2_content });
 			infowindow.open(map_canvas,marker2);
 		});
-	// marker 2 END
+	// marker 2 END*/
 
-	var infowindow = new google.maps.InfoWindow(
+/*	var infowindow = new google.maps.InfoWindow(
 		{content:marker2_content });
-	infowindow.open(map_canvas,marker2);
+	infowindow.open(map_canvas,marker2);*/
 
     //****************************************************************************
     // marker 3 content
