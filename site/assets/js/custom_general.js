@@ -27,6 +27,16 @@ window.mobileAndTabletCheck = function() {
     return check;
 };
 
+$(window).resize(function(){
+    var width = window.width;
+
+    $(".specials-content>h4").forEach(function(index) {
+        console.log(index + ": " + $(this).text());
+    })
+
+    $(".specials-content").css("padding-top", "10px");
+});
+
 var isMobile = window.mobileAndTabletCheck();
 
 $(function () {
