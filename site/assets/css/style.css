@@ -1456,7 +1456,7 @@ Home Page
 }
 
 .specials-content h4 {
-    margin-top: -13px;
+    margin-top: -10px;
     margin-bottom: 0;
     font-size: 17px;
 }
@@ -4320,6 +4320,23 @@ a.mail-text:hover, a.public_vk:hover {
     .content p
     {
         font-size: 20px !important;
+    }
+
+    .specials-content {
+        padding-left: 0;
+        width: auto;
+        float: none !important;
+    }
+
+
+    .specials-content.one-line-special-content {
+        /* padding-top: 0px !important; */
+    }
+
+    .specials-round {
+        margin-bottom: 0;
+        margin-right: 10px;
+        display: inline-block;
     }
 }
 

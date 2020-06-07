@@ -27,15 +27,41 @@ window.mobileAndTabletCheck = function() {
     return check;
 };
 
-$(window).resize(function(){
-    var width = window.width;
+/*$(window).load(function () {
+    var width = $(window).width();
 
-    $(".specials-content>h4").forEach(function(index) {
-        console.log(index + ": " + $(this).text());
+    $(".specials-content>h4").each(function(index) {
+        var length = $(this).text().length;
+        $(this).show();
+        $(this).parent().show();
+
+        if (width >= 320 && width < 450) {
+
+            var height = $(this).offsetHeight;
+            console.log("height of row: " + height);
+
+            height = $(this).height;
+            console.log("height of row: " + height);
+
+            height = $(this).height();
+            console.log("height of row: " + height);
+
+            if (length > 12 ) {
+
+                console.log(index + ": " + $(this).text() + " with length: " + length);
+                var parent = $(this).parent();
+                var innerWidth = $(this).innerWidth();
+                $(this).parent().css("padding-top", "0px");
+            }
+        }
     })
 
-    $(".specials-content").css("padding-top", "10px");
-});
+    /!* $(".specials-content").css("padding-top", "10px");*!/
+});*/
+
+/*$(window).resize(function(){
+
+});*/
 
 var isMobile = window.mobileAndTabletCheck();
 
@@ -451,6 +477,19 @@ jQuery(document).ready(function ($) {
                     scroll.stop().unbind('scroll mousedown DOMMouseScroll mousewheel keyup'); // This identifies the scroll as a user action, stops the animation, then unbinds the event straight after (optional)
                 }
             });
+
+            /*-Нужен для динамических отступов, чтобы позиции были на одном уровне с ценой*/
+            $(this)
+                .parent()
+                .next('.toggle-content')
+                .find(".specials-content>h4")
+                .each(function () {
+                    var height = $(this).parent().height();
+
+                    if (height > 0 && height < 30) {
+                        $(this).parent().css("padding-top", "26px");
+                    }
+                });
 
             return false;
         }
