@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b23e9498-a0fb-4bb0-a4f3-411774b92340" name="Default" comment="new event">
-      <change afterPath="$PROJECT_DIR$/sort-test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/custom_general.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom_general.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/google-map-custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/google-map-custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +12,6 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="site" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,6 +34,10 @@
   </component>
   <component name="ProjectId" id="1T6Ehf5XdwzW1ONOiMXWwisWAGo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -60,11 +57,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="301" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="975" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Olivka" />
     <property name="prop_add_unversioned_files" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -78,18 +78,6 @@
       <recent name="F:\Dropbox\Git\Blinari\site\img\events\old" />
       <recent name="E:\Dropbox\Git\Blinari\site\img\events\thumb" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="js.build_tools.gulp">
@@ -114,6 +102,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -271,6 +260,17 @@
       <workItem from="1590384881192" duration="4217000" />
       <workItem from="1590429693293" duration="1521000" />
       <workItem from="1590492412506" duration="619000" />
+      <workItem from="1610653852750" duration="301000" />
+      <workItem from="1610782040309" duration="923000" />
+      <workItem from="1612608476964" duration="1111000" />
+      <workItem from="1613194981976" duration="1271000" />
+      <workItem from="1613197878516" duration="129000" />
+      <workItem from="1613200063902" duration="51000" />
+      <workItem from="1613200922575" duration="208000" />
+      <workItem from="1613201147893" duration="3876000" />
+      <workItem from="1613369941695" duration="647000" />
+      <workItem from="1614147629279" duration="119000" />
+      <workItem from="1617601027229" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="Added menu">
       <created>1476912567914</created>
@@ -500,7 +500,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -517,13 +517,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -560,5 +559,19 @@
     <MESSAGE value="Before sort experiment" />
     <MESSAGE value="new custom general" />
     <option name="LAST_COMMIT_MESSAGE" value="new custom general" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1614147747293">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1614147747293" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1613370595845">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1613370595845" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1610782597913">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1610782597913" />
   </component>
 </project>
