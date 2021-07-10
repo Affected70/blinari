@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" type="text/css"/>
     <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css"/>
     <link rel="stylesheet" href="assets/css/animate.min.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/css/style.css?version=4" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css?version=5" type="text/css"/>
 
     <!--Menu-->
     <link rel="stylesheet" href="assets/css/menu.css" type="text/css"/>
@@ -93,6 +93,9 @@
     <link rel="apple-touch-icon" href="assets/images/apple_touch_icon.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple_touch_icon_72x72.png"/>
     <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple_touch_icon_114x114.png"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
 
 <!--    <script type="text/javascript">
         var appCache = window.applicationCache;
@@ -109,6 +112,10 @@
     <script src="assets/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
     <script type="text/javascript" src="assets/js/update_cache.js?version=11"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
 
     <style>
 
@@ -692,7 +699,7 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>51р</h4></div>
+                                                                <div class="specials-round"><h4>54р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Каша геркулесовая, 200гр</h4>
                                                                 </div>
@@ -716,7 +723,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>51р</h4></div>
+                                                                <div class="specials-round"><h4>54р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Каша рисовая, 200гр</h4>
                                                                 </div>
@@ -724,31 +731,31 @@
                                                         </div>
                                                         <!--End Каши-->
                                                         <div class="clearfix">
-                                                            <div class="specials-round"><h4>67р</h4></div>
+                                                            <div class="specials-round"><h4>70р</h4></div>
                                                             <div class="specials-content one-line-special-content">
-                                                                <h4>Запеканка с творогом и яблоком</h4>
+                                                                <h4>Запеканка с яблоком</h4>
                                                             </div>
                                                         </div>
                                                         <div class="clearfix">
-                                                            <div class="specials-round"><h4>54р</h4></div>
+                                                            <div class="specials-round"><h4>57р</h4></div>
                                                             <div class="specials-content">
                                                                 <h4>Омлет</h4>
                                                             </div>
                                                         </div>
                                                         <div class="clearfix">
-                                                            <div class="specials-round"><h4>30р</h4></div>
+                                                            <div class="specials-round"><h4>33р</h4></div>
                                                             <div class="specials-content">
                                                                 <h4>Сырник 1шт</h4>
                                                             </div>
                                                         </div>
                                                         <div class="clearfix">
-                                                            <div class="specials-round"><h4>47р</h4></div>
+                                                            <div class="specials-round"><h4>52р</h4></div>
                                                             <div class="specials-content">
                                                                 <h4>Яичница</h4>
                                                             </div>
                                                         </div>
                                                         <div class="clearfix">
-                                                            <div class="specials-round"><h4>19р</h4></div>
+                                                            <div class="specials-round"><h4>20р</h4></div>
                                                             <div class="specials-content">
                                                                 <h4>Яйцо отварное</h4>
                                                             </div>
@@ -770,28 +777,28 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>93р</h4></div>
+                                                                <div class="specials-round"><h4>100р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Блин "Восточный"</h4>
                                                                     <p>рулет куриный, морковь по-корейски, начинка пикантная</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>106р</h4></div>
+                                                                <div class="specials-round"><h4>111р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Блин "Греческий"</h4>
                                                                     <p>брынза, капуста пекинская, томат, зелень</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>93р</h4></div>
+                                                                <div class="specials-round"><h4>100р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Блин "Корейский"</h4>
                                                                     <p>буженина, морковь по-корейски, начинка пикантная</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>111р</h4></div>
+                                                                <div class="specials-round"><h4>117р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Блин "Пепперони"</h4>
                                                                     <p>колбаски охотничьи, сервелат, помидор, сыр, соус тар-тар</p>
@@ -998,20 +1005,20 @@
                                                             </div>
                                                             <!--   End Добавки-->
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>93р</h4></div>
+                                                                <div class="specials-round"><h4>98р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Блин "Цезарь"</h4>
                                                                     <p>филе куриное, томат, капуста пекинская, начинка пикантная</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>115р</h4></div>
+                                                                <div class="specials-round"><h4>121р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Блин 2 сыра и томаты</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>115р</h4></div>
+                                                                <div class="specials-round"><h4>121р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Блин "Оригинальный"</h4>
                                                                     <p>помидоры, сыр</p>
@@ -1025,45 +1032,45 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>113р</h4></div>
+                                                                <div class="specials-round"><h4>119р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Илья Муромец, 250гр</h4>
                                                                     <p>буженина, томаты св., грибы, начинка пикантная</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>115р</h4></div>
+                                                                <div class="specials-round"><h4>121р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Куриный богатырь, 180гр</h4>
                                                                     <p>сыр, куринное филе, грибы</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>68р</h4></div>
+                                                                <div class="specials-round"><h4>80р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Морковный</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>129р</h4></div>
+                                                                <div class="specials-round"><h4>135р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Новый Куриный Богатырь</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>108р</h4></div>
+                                                                <div class="specials-round"><h4>113р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4 class="two-rows">С бужениной, картофелем и соусом тар-тар, 270гр</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>99р</h4></div>
+                                                                <div class="specials-round"><h4>104р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С ветчиной и сыром, 250гр</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>99р</h4></div>
+                                                                <div class="specials-round"><h4>104р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>С грибами, 180гр</h4>
                                                                 </div>
@@ -1075,45 +1082,44 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>105р</h4></div>
+                                                                <div class="specials-round"><h4>110р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
-                                                                    <h4>С копченой курицей</h4>
+                                                                    <h4>С копч.курицей,картофелем и соусом Тар-Тар</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>125р</h4></div>
+                                                                <div class="specials-round"><h4>131р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С курицей, ананасом и сыром</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>105р</h4></div>
+                                                                <div class="specials-round"><h4>110р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С курицей и соусом тар тар, 180гр</h4>
                                                                 </div>
-<!--                                                                Блин с копч.курицей,картофелем и соусом Тар-Тар-->
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>59р</h4></div>
+                                                                <div class="specials-round"><h4>62р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>С маслом, 180гр</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>99р</h4></div>
+                                                                <div class="specials-round"><h4>104р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С мясом и рисом, 250гр</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>93р</h4></div>
+                                                                <div class="specials-round"><h4>98р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>С пикантной начинкой, 180гр</h4>
                                                                     <p>сыр, майонез, чеснок, зелень</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>139р</h4></div>
+                                                                <div class="specials-round"><h4>146р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С рисом и семгой, 250гр</h4>
                                                                 </div>
@@ -1125,13 +1131,13 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>99р</h4></div>
+                                                                <div class="specials-round"><h4>104р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>С сыром</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>108р</h4></div>
+                                                                <div class="specials-round"><h4>113р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>С сыром Брынза</h4>
                                                                 </div>
@@ -1143,19 +1149,19 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>68р</h4></div>
+                                                                <div class="specials-round"><h4>73р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Свекольный</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>68р</h4></div>
+                                                                <div class="specials-round"><h4>71р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Со шпинатом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>129р</h4></div>
+                                                                <div class="specials-round"><h4>135р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Утренний</h4>
                                                                     <p>сосиска, яйцо, картофельное пюре</p>
@@ -1321,19 +1327,19 @@
                                                             </div>
                                                             <!--   End Добавки-->
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>121р</h4></div>
+                                                                <div class="specials-round"><h4>127р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
-                                                                    <h4>Блин Маскорпоне со свежей ягодой</h4>
+                                                                    <h4>Блин Маскарпоне со свежей ягодой</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>93р</h4></div>
+                                                                <div class="specials-round"><h4>98р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Блин Сникерс с вареной сгущенкой</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>93р</h4></div>
+                                                                <div class="specials-round"><h4>98р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Блин Сникерс с шоколадной пастой</h4>
                                                                 </div>
@@ -1371,79 +1377,79 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>99р</h4></div>
+                                                                <div class="specials-round"><h4>104р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С вареной сгущенкой</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>103р</h4></div>
+                                                                <div class="specials-round"><h4>108р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>С вишней</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>108р</h4></div>
+                                                                <div class="specials-round"><h4>113р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С вишней и кремом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>110р</h4></div>
+                                                                <div class="specials-round"><h4>116р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С вишней и шок.пастой</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>99р</h4></div>
+                                                                <div class="specials-round"><h4>104р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>С джемом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>93р</h4></div>
+                                                                <div class="specials-round"><h4>98р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С клюквой и сахаром</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>121р</h4></div>
+                                                                <div class="specials-round"><h4>127р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С маком и грецким орехом </h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>99р</h4></div>
+                                                                <div class="specials-round"><h4>104р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С манго и кремом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>99р</h4></div>
+                                                                <div class="specials-round"><h4>104р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С творогом и изюмом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>103р</h4></div>
+                                                                <div class="specials-round"><h4>108р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С творогом и персиком</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>103р</h4></div>
+                                                                <div class="specials-round"><h4>115р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С черносливом и кремом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>103р</h4></div>
+                                                                <div class="specials-round"><h4>115р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
-                                                                    <h4>С черносливом и сгущ. молоком</h4>
+                                                                    <h4>С черносливом, сгущенкой и орехом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>93р</h4></div>
+                                                                <div class="specials-round"><h4>98р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>С яблоком и корицей</h4>
                                                                 </div>
@@ -1475,14 +1481,14 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>84р</h4></div>
+                                                                <div class="specials-round"><h4>83р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Салат Средиземноморский</h4>
                                                                 </div>
                                                             </div>
 
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Салат с сырой тыквой и брынзой</h4>
                                                                 </div>
@@ -1494,7 +1500,7 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Винегрет </h4>
                                                                     <p>картофель, капуста квашенная, свекла, зеленый горошек, огурцы консервированные, лук, морковь, заправка
@@ -1502,7 +1508,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>89</h4>
+                                                                <div class="specials-round"><h4>93</h4>
                                                                 </div>
                                                                 <div class="specials-content">
                                                                     <h4>Греческий </h4>
@@ -1510,46 +1516,46 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>84р</h4></div>
+                                                                <div class="specials-round"><h4>88р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Забава </h4>
                                                                     <p>шампиньоны жаренные, капуста пекинская, перец болгарский, огурцы свежие, сыр, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Капуста по-грузински</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Капустный </h4>
                                                                     <p>капуста б\к, морковь, яблоко, клюква, заправка масло</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Молодецкий </h4>
                                                                     <p>капуста б\к, корейская морковь, огурцы свежие, перец болгарский, заправка масло, соевый соус</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>66р</h4></div>
+                                                                <div class="specials-round"><h4>69р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Овощной </h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>56р</h4></div>
+                                                                <div class="specials-round"><h4>59р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Пряный</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Салат Аппетитный</h4>
                                                                 </div>
@@ -1561,7 +1567,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Салат Витаминный</h4>
                                                                 </div>
@@ -1574,7 +1580,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Салат капустный с перцем</h4>
                                                                 </div>
@@ -1586,13 +1592,13 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>42р</h4></div>
+                                                                <div class="specials-round"><h4>44р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Салат Репка</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Салат Свекла с черносливом </h4>
                                                                 </div>
@@ -1636,21 +1642,21 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>80р</h4></div>
+                                                                <div class="specials-round"><h4>84р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Каприз</h4>
                                                                     <p>куриный рулет, капуста пекинская, огурцы свежие, морковь по - карейски заправка горчичная</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>82р</h4></div>
+                                                                <div class="specials-round"><h4>86р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Колорит </h4>
                                                                     <p>филе куриное отварное, огурцы свежие, огурцы консервированные, фасоль конс., морковь пассиров.</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>87р</h4></div>
+                                                                <div class="specials-round"><h4>91р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Корейский с курицей</h4>
                                                                     <p>филе куриное, морковь корейская, огурцы консервированные, зеленый горошек, шампиньоны жареные, заправка
@@ -1658,7 +1664,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>98р</h4></div>
+                                                                <div class="specials-round"><h4>82р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Пикадилли </h4>
                                                                     <p>филе куриное, помидор свежий, фасоль консервированная, лук, шампиньоны жареные, заправка майонез с
@@ -1679,7 +1685,7 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>80р</h4></div>
+                                                                <div class="specials-round"><h4>84р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Богатырь</h4>
                                                                     <p>буженика , картофель, капуста пекинская, огурцы свежие, перец болгарский, заправка горчичная с соевым
@@ -1687,28 +1693,28 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>64р</h4></div>
+                                                                <div class="specials-round"><h4>67р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Вечерний </h4>
                                                                     <p>буженина, зеленый горошек, огурец свежий, капуста квашенная, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>88р</h4></div>
+                                                                <div class="specials-round"><h4>92р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Губернский </h4>
                                                                     <p>буженина, огурец маринованный, лук и морковь пассированные, шампиньоны жаренные, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>88р</h4></div>
+                                                                <div class="specials-round"><h4>92р</h4></div>
                                                                 <div class="specials-content">
-                                                                    <h4>Гурман </h4>
+                                                                    <h4>Гурман</h4>
                                                                     <p>буженина, яйцо, лук и морковь пассированные, шампиньоны жареные, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>75р</h4></div>
+                                                                <div class="specials-round"><h4>79р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Загадка </h4>
                                                                     <p>колбаса копченая, капуста б\к, шампиньоны жаренные, огурцы свежие, кукуруза консервированная, заправка
@@ -1716,21 +1722,21 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>68р</h4></div>
+                                                                <div class="specials-round"><h4>71р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Купеческий </h4>
                                                                     <p>буженина, морковь корейская, огурцы свежие, капуста пекинская, заправка майонез с чесноком</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>90р</h4></div>
+                                                                <div class="specials-round"><h4>95р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Любимый </h4>
                                                                     <p>буженина, помидоры свежие, перец болгарский, капуста пекинская, заправка масло, горчица</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Метелка </h4>
                                                                     <p>капуста белокочанная, морковь, свекла, масло растительное</p>
@@ -1744,14 +1750,14 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>68р</h4></div>
+                                                                <div class="specials-round"><h4>71р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Мечта </h4>
                                                                     <p>картофель, ветчина, перец болгарский, огурцы консервированные, помидоры свежие, сыр, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>75р</h4></div>
+                                                                <div class="specials-round"><h4>79р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Находка </h4>
                                                                     <p>копченая колбаса, картофель, помидор свежий, перец болгарский, сыр, заправка майонез</p>
@@ -1765,14 +1771,14 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>61р</h4></div>
+                                                                <div class="specials-round"><h4>64р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Оливье </h4>
                                                                     <p>колбаса докторская, картофель, яйцо, зеленый горошек, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>75р</h4></div>
+                                                                <div class="specials-round"><h4>79р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Остренький </h4>
                                                                     <p>ветчина, шампиньоны жареные, капуста пекинская, огурцы свежие, перец острый маринованный, корейская морковь,
@@ -1780,20 +1786,20 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>75р</h4></div>
+                                                                <div class="specials-round"><h4>79р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Охотничий </h4>
                                                                     <p>копченая колбаса, корейская морковь, кукуруза консервированная, перец болгарский, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Салат капустный с ветчиной</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>63р</h4></div>
+                                                                <div class="specials-round"><h4>66р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Салат Мираж</h4>
                                                                     <p>капуста белокочанная, крабовые палочки, кукуруза, огурец, маойнез</p>
@@ -1812,7 +1818,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>75р</h4></div>
+                                                                <div class="specials-round"><h4>72р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Свеженький </h4>
                                                                     <p>огурец свежий, капуста пекинская, ветчина, перец болгарский, фасоль консервированная, заправка майонез с
@@ -1827,28 +1833,28 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>67р</h4></div>
+                                                                <div class="specials-round"><h4>70р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Фасолька </h4>
                                                                     <p>фасоль консервированная, ветчина, корейская морковь, огурец свежий, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>79р</h4></div>
+                                                                <div class="specials-round"><h4>83р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Цезарь </h4>
                                                                     <p>филе куриное, капуста пекинская, помидоры свежие, сыр пармезан, сухари, заправка соус цезарь</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>82р</h4></div>
+                                                                <div class="specials-round"><h4>86р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Экзотический </h4>
                                                                     <p>ветчина, ананасы консервированные, яйцо, сыр, шампиньоны жареные, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>69р</h4></div>
+                                                                <div class="specials-round"><h4>72р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Юбилейный </h4>
                                                                     <p>колбаса копченая, капуста квашенная, огурцы свежие, перец болгарский, кукуруза консервированная, заправка
@@ -1865,27 +1871,27 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>64р</h4></div>
+                                                                <div class="specials-round"><h4>67р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Вкусненький </h4>
                                                                     <p>крабовые палочки, яйцо, капуста пекинская, огурцы маринованные, шампиньоны жареные, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>58р</h4></div>
+                                                                <div class="specials-round"><h4>61р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Мозаика </h4>
                                                                     <p>капуста, огурец, томаты, клюква, масло растительное</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>70р</h4></div>
+                                                                <div class="specials-round"><h4>74р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Салат Золотая рыбка</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>51р</h4></div>
+                                                                <div class="specials-round"><h4>54р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Салат с креветкой</h4>
                                                                 </div>
@@ -1897,14 +1903,14 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>60р</h4></div>
+                                                                <div class="specials-round"><h4>65р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Сельдь под шубой </h4>
                                                                     <p>сельдь, картофель, яйцо, морковь, лук, свекла, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>64р</h4></div>
+                                                                <div class="specials-round"><h4>67р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Фантазия </h4>
                                                                     <p>капуста пекинская, перец болгарский, крабовые палочки, огурец свежий, заправка майонез с чесноком</p>
@@ -1952,7 +1958,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>129р</h4></div>
+                                                                        <div class="specials-round"><h4>159р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Суп пюре с семгой</h4>
                                                                         </div>
@@ -2022,7 +2028,7 @@
                                                                 <div class="clearfix">
                                                                     <div class="specials-round"><h4>83р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
-                                                                        <h4>Суп-лапша грибная</h4>
+                                                                        <h4>Суп-лапша с грибами</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
@@ -2115,25 +2121,25 @@
                                                                     </div>
 
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>40р</h4></div>
+                                                                        <div class="specials-round"><h4>42р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Булгур с овощами</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>55р</h4></div>
+                                                                        <div class="specials-round"><h4>65р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
-                                                                            <h4>Вареники 5 шт с жар луком и грибами</h4>
+                                                                            <h4>Вареники с картофелем, грибами и луком 5шт</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>55р</h4></div>
+                                                                        <div class="specials-round"><h4>58р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Вареники с творогом 5 шт</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>70р</h4></div>
+                                                                        <div class="specials-round"><h4>74р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Голубцы овощные</h4>
                                                                         </div>
@@ -2145,15 +2151,15 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>109р</h4></div>
+                                                                        <div class="specials-round"><h4>114р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Гуляш по-венгерски</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>125р</h4></div>
+                                                                        <div class="specials-round"><h4>135р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
-                                                                            <h4>Драник со сметаной</h4>
+                                                                            <h4>Драники со сметаной</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
@@ -2163,19 +2169,19 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>170р</h4></div>
+                                                                        <div class="specials-round"><h4>179р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Медвежья лапа</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>47р</h4></div>
+                                                                        <div class="specials-round"><h4>57р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Морковные котлеты</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>179р</h4></div>
+                                                                        <div class="specials-round"><h4>188р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Мясо по-французски</h4>
                                                                         </div>
@@ -2199,19 +2205,19 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>35р</h4></div>
+                                                                        <div class="specials-round"><h4>37р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Паста в сливочном соусе, 100гр</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>35р</h4></div>
+                                                                        <div class="specials-round"><h4>37р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Паста в томатно-чесночном соусе, 140гр</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>45р</h4></div>
+                                                                        <div class="specials-round"><h4>51р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Свекольные котлеты</h4>
                                                                         </div>
@@ -2245,32 +2251,32 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>85р</h4></div>
+                                                                        <div class="specials-round"><h4>89р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Голубцы ленивые</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>95р</h4></div>
+                                                                        <div class="specials-round"><h4>99р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Голубцы мясные, 130гр</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>179р</h4></div>
+                                                                        <div class="specials-round"><h4>188р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Жаркое из говядины</h4>
                                                                             <p>говядина, лук, морковь, перец болг.</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>135р</h4></div>
+                                                                        <div class="specials-round"><h4>142р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Индейка обжаренная</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>145р</h4></div>
+                                                                        <div class="specials-round"><h4>152р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Индейка по-итальянски</h4>
                                                                             <p>индейка, перец болгарский, томаты, лук, морковь, кабачок, баклажан, специи</p>
@@ -2283,9 +2289,9 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>125р</h4></div>
+                                                                        <div class="specials-round"><h4>140р</h4></div>
                                                                         <div class="specials-content">
-                                                                            <h4>Картофель тушеный со свининой, 210гр</h4>
+                                                                            <h4>Картофель тушенный с мясом, 210гр</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
@@ -2302,13 +2308,13 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>90р</h4></div>
+                                                                        <div class="specials-round"><h4>95р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Котлета из индейки</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>139р</h4></div>
+                                                                        <div class="specials-round"><h4>146р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Котлета по-Киевски, 110гр</h4>
                                                                         </div>
@@ -2320,14 +2326,14 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>119р</h4></div>
+                                                                        <div class="specials-round"><h4>125р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Котлета оригинальная, 110гр </h4>
                                                                             <p>свинина, говядина, курица</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>119р</h4></div>
+                                                                        <div class="specials-round"><h4>125р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Котлеты по-домашнему, 110гр</h4>
                                                                             <p>свинина, говядина</p>
@@ -2341,7 +2347,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>170р</h4></div>
+                                                                        <div class="specials-round"><h4>179р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Медвежья лапа, 200гр</h4>
                                                                             <p>свинина, картофель, лимон, майонез</p>
@@ -2354,27 +2360,27 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>105р</h4></div>
+                                                                        <div class="specials-round"><h4>110р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Пельмени куриные с сыром</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>105р</h4></div>
+                                                                        <div class="specials-round"><h4>110р</h4></div>
                                                                         <div class="specials-content">
-                                                                            <h4>Пельмени Пекинские</h4>
+                                                                            <h4>Пельмени Пекин</h4>
                                                                             <p>фарш свиной, капуста пекинская</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>149р</h4></div>
+                                                                        <div class="specials-round"><h4>156р</h4></div>
                                                                         <div class="specials-content">
-                                                                            <h4>Пельмени по боярски</h4>
+                                                                            <h4>Пельмени по Боярски</h4>
                                                                             <p>свино-говяжий фарш; обжаренные морковь, грибы и лук</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>119р</h4></div>
+                                                                        <div class="specials-round"><h4>125р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Перец фаршированный</h4>
                                                                         </div>
@@ -2394,25 +2400,25 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>48р</h4></div>
+                                                                        <div class="specials-round"><h4>50р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Сосиска отварная</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>69р</h4></div>
+                                                                        <div class="specials-round"><h4>72р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Тефтели мясные 1 шт</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>129р</h4></div>
+                                                                        <div class="specials-round"><h4>135р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Тефтели мясные</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>139р</h4></div>
+                                                                        <div class="specials-round"><h4>146р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Шашлык из свинины</h4>
                                                                         </div>
@@ -2426,32 +2432,26 @@
                                                                 <div class="toggle-content">
 
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>80р</h4></div>
-                                                                        <div class="specials-content one-line-special-content">
-                                                                            <h4>Биточки куриные, 100гр</h4>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="clearfix">
-                                                                        <div class="specials-round"><h4>129р</h4></div>
+                                                                        <div class="specials-round"><h4>135р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Жульен с курицей, 150гр</h4>
                                                                             <p>куриное филе, лук, шампиньоны, сливочный соус, сыр</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>145р</h4></div>
+                                                                        <div class="specials-round"><h4>152р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
-                                                                            <h4>Зразы мясные с сыром, 110гр</h4>
+                                                                            <h4>Зразы с сыром, 110гр</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>99р</h4></div>
+                                                                        <div class="specials-round"><h4>140р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Картофель тушеный с курицей</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>85р</h4></div>
+                                                                        <div class="specials-round"><h4>89р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Котлета куриная, 110гр</h4>
                                                                         </div>
@@ -2463,13 +2463,19 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>145р</h4></div>
+                                                                        <div class="specials-round"><h4>87р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
-                                                                            <h4>Куриное филе со шпинатом и брынзой</h4>
+                                                                            <h4>Куриные биточки, 100гр</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>159р</h4></div>
+                                                                        <div class="specials-round"><h4>152р</h4></div>
+                                                                        <div class="specials-content one-line-special-content">
+                                                                            <h4>Курица со шпинатом и брынзой</h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix">
+                                                                        <div class="specials-round"><h4>167р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Куриное фрикасе, 130гр</h4>
                                                                             <p>курица, шампиньоны, лук, майонез, сыр</p>
@@ -2507,13 +2513,13 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>115р</h4></div>
+                                                                        <div class="specials-round"><h4>121р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Курица в сыре</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>119р</h4></div>
+                                                                        <div class="specials-round"><h4>125р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Овощное рагу с курицей, 150гр</h4>
                                                                             <p>курица, картофель, овощная смесь, чеснок</p>
@@ -2526,14 +2532,14 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>129р</h4></div>
+                                                                        <div class="specials-round"><h4>135р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Плов с курицей, 150гр</h4>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>139р</h4></div>
+                                                                        <div class="specials-round"><h4>146р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Шашлык куриный</h4>
                                                                         </div>
@@ -2552,43 +2558,43 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>63р</h4></div>
+                                                                        <div class="specials-round"><h4>71р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Зраза рыбная</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>129р</h4></div>
+                                                                        <div class="specials-round"><h4>135р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Рыба жареная</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>149р</h4></div>
+                                                                        <div class="specials-round"><h4>156р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Рыба по-волжски</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>139р</h4></div>
+                                                                        <div class="specials-round"><h4>146р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Рыба под маринадом</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>149р</h4></div>
+                                                                        <div class="specials-round"><h4>156р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Рыба с брокколи</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>146р</h4></div>
+                                                                        <div class="specials-round"><h4>153р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Рыба в сыре</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>89р</h4></div>
+                                                                        <div class="specials-round"><h4>93р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Рыбные котлеты, 100гр</h4>
                                                                         </div>
@@ -2619,7 +2625,7 @@
                                                                 </div>
                                                                 <div class="toggle-content">
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>93р</h4></div>
+                                                                        <div class="specials-round"><h4>98р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Омлет с брокколи</h4>
                                                                         </div>
@@ -2631,13 +2637,13 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>93р</h4></div>
+                                                                        <div class="specials-round"><h4>98р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Омлет с фасолью стручковой</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>93р</h4></div>
+                                                                        <div class="specials-round"><h4>98р</h4></div>
                                                                         <div class="specials-content one-line-special-content">
                                                                             <h4>Омлет с цветной капустой</h4>
                                                                         </div>
@@ -2662,19 +2668,19 @@
                                                             </div>
                                                             <div class="toggle-content">
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>35р</h4></div>
+                                                                    <div class="specials-round"><h4>37р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Гречка отварная, 100гр</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>35р</h4></div>
+                                                                    <div class="specials-round"><h4>37р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Макароны, 100гр</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>45р</h4></div>
+                                                                    <div class="specials-round"><h4>47р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Рис с овощами, 100гр</h4>
                                                                     </div>
@@ -2687,74 +2693,74 @@
                                                             </div>
                                                             <div class="toggle-content">
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>63р</h4></div>
+                                                                    <div class="specials-round"><h4>66р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Брокколи отварное</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>30р</h4></div>
+                                                                    <div class="specials-round"><h4>32р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Гороховое пюре, 100гр</h4>
                                                                     </div>
                                                                 </div>
 
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>65р</h4></div>
+                                                                    <div class="specials-round"><h4>68р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Капуста тушеная с грибами, 100гр</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>55р</h4></div>
+                                                                    <div class="specials-round"><h4>58р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Капуста цветная с зеленью</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>30р</h4></div>
+                                                                    <div class="specials-round"><h4>55р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Картофель жареный из отварного с чесноком</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>55р</h4></div>
+                                                                    <div class="specials-round"><h4>75р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Картофель жареный с грибами</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>60р</h4></div>
+                                                                    <div class="specials-round"><h4>63р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Картофель фри, 100гр</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>35р</h4></div>
+                                                                    <div class="specials-round"><h4>43р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Картофельное пюре, 100гр</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>85р</h4></div>
+                                                                    <div class="specials-round"><h4>89р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Картофельные дольки, 100гр</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>55р</h4></div>
+                                                                    <div class="specials-round"><h4>58р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Овощная смесь тушеная, 150гр</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>60р</h4></div>
+                                                                    <div class="specials-round"><h4>63р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Овощное Ассорти</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>65р</h4></div>
+                                                                    <div class="specials-round"><h4>68р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Овощное рагу, 100гр</h4>
                                                                     </div>
@@ -2766,7 +2772,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>60р</h4></div>
+                                                                    <div class="specials-round"><h4>63р</h4></div>
                                                                     <div class="specials-content one-line-special-content">
                                                                         <h4>Фасоль стручковая с чесноком</h4>
                                                                     </div>
@@ -2792,19 +2798,19 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>65р</h4></div>
+                                                                <div class="specials-round"><h4>68р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Ватрушка</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>55р</h4></div>
+                                                                <div class="specials-round"><h4>58р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Венгерка/Круасан с вишней</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>69р</h4></div>
+                                                                <div class="specials-round"><h4>72р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Курник</h4>
                                                                 </div>
@@ -2816,9 +2822,9 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>28р</h4></div>
+                                                                <div class="specials-round"><h4>29р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
-                                                                    <h4>Пирожок с капустой</h4>
+                                                                    <h4>Пирожок с капустой и яйцом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
@@ -2828,13 +2834,13 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>30р</h4></div>
+                                                                <div class="specials-round"><h4>32р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
-                                                                    <h4>Пирожок с картошкой</h4>
+                                                                    <h4>Пирожок с картофелем</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>40р</h4></div>
+                                                                <div class="specials-round"><h4>42р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Пирожок с куриной печенью</h4>
                                                                 </div>
@@ -2846,55 +2852,43 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>43р</h4></div>
+                                                                <div class="specials-round"><h4>45р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Пирожок с луком и яйцом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>95р</h4></div>
-                                                                <div class="specials-content">
-                                                                    <h4>Пицца с колбасой</h4>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clearfix">
-                                                                <div class="specials-round"><h4>95р</h4></div>
-                                                                <div class="specials-content">
-                                                                    <h4>Пицца с сосиской</h4>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clearfix">
-                                                                <div class="specials-round"><h4>59р</h4></div>
+                                                                <div class="specials-round"><h4>62р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Слойка с вишней</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Слойка с джемом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Слойка с курагой</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Слойка с сыром</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Слойка с творогом</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>55р</h4></div>
+                                                                <div class="specials-round"><h4>58р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Слойка с яблоками</h4>
                                                                 </div>
@@ -2960,7 +2954,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>65р</h4></div>
+                                                                    <div class="specials-round"><h4>68р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Вишневый </h4>
                                                                     </div>
@@ -2972,19 +2966,19 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>55р</h4></div>
+                                                                    <div class="specials-round"><h4>58р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>С творогом</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>65р</h4></div>
+                                                                    <div class="specials-round"><h4>68р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Со смородиной</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>55р</h4></div>
+                                                                    <div class="specials-round"><h4>58р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Яблочный</h4>
                                                                     </div>
@@ -3016,32 +3010,25 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>79р</h4></div>
-                                                                <div class="specials-content one-line-special-content">
-                                                                    <h4>Запеченное яблоко с клюквой</h4>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="clearfix">
                                                                 <div class="specials-round"><h4>36р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Кекс триумф</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>85р</h4></div>
+                                                                <div class="specials-round"><h4>89р</h4></div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Корзинка с фруктово-ягодной начинкой большая</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>65р</h4></div>
+                                                                <div class="specials-round"><h4>68р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Мороженое </h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>10р</h4>
+                                                                <div class="specials-round"><h4>11р</h4>
                                                                 </div>
                                                                 <div class="specials-content one-line-special-content">
                                                                     <h4>Печенье фирменное (песочное)</h4>
@@ -3060,6 +3047,14 @@
                                                                     <h4>Фруктовое желе</h4>
                                                                 </div>
                                                             </div>
+
+                                                            <div class="clearfix">
+                                                                <div class="specials-round"><h4>83р</h4></div>
+                                                                <div class="specials-content one-line-special-content">
+                                                                    <h4>Яблоко запеченное с клюквой</h4>
+                                                                </div>
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -3420,14 +3415,14 @@
                                                             </div>
                                                         </div>
                                                         <div class="clearfix">
-                                                            <div class="specials-round"><h4>42р</h4></div>
+                                                            <div class="specials-round"><h4>45р</h4></div>
                                                             <div class="specials-content">
                                                                 <h4>Нарезка мясная</h4>
                                                                 <p>сервелат/ветчина</p>
                                                             </div>
                                                         </div>
                                                         <div class="clearfix">
-                                                            <div class="specials-round"><h4>42р</h4></div>
+                                                            <div class="specials-round"><h4>45р</h4></div>
                                                             <div class="specials-content">
                                                                 <h4>Нарезка овощная</h4>
                                                                 <p>томат/огурец/перец</p>
@@ -3441,7 +3436,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="clearfix">
-                                                            <div class="specials-round"><h4>53р</h4></div>
+                                                            <div class="specials-round"><h4>60р</h4></div>
                                                             <div class="specials-content">
                                                                 <h4>Сельдь с луком, 40 гр.</h4>
                                                             </div>
@@ -3471,13 +3466,13 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Винегрет, 100 гр</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Салат Капустный, 100 гр</h4>
                                                                 </div>
@@ -3491,35 +3486,35 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>64р</h4></div>
+                                                                <div class="specials-round"><h4>67р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Вечерний</h4>
                                                                     <p>буженина, зеленый горошек, огурец свежий, капуста квашенная, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>88р</h4></div>
+                                                                <div class="specials-round"><h4>92р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Губернский</h4>
                                                                     <p>буженина, огурец маринованный, лук и морковь пассированные, шампиньоны жаренные, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>88р</h4></div>
+                                                                <div class="specials-round"><h4>92р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Гурман</h4>
                                                                     <p>буженина, яйцо, лук и морковь пассированные, шампиньоны жареные, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>68р</h4></div>
+                                                                <div class="specials-round"><h4>71р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Купеческий</h4>
                                                                     <p>буженина, морковь корейская, огурцы свежие, капуста пекинская, заправка майонез с чесноком</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>90р</h4></div>
+                                                                <div class="specials-round"><h4>95р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Любимый</h4>
                                                                     <p>буженина, помидоры свежие, перец болгарский, капуста пекинская, заправка масло, горчица</p>
@@ -3542,21 +3537,21 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>68р</h4></div>
+                                                                <div class="specials-round"><h4>71р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Мечта </h4>
                                                                     <p>картофель, ветчина, перец болгарский, огурцы консервированные, помидоры свежие, сыр, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>61р</h4></div>
+                                                                <div class="specials-round"><h4>64р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Оливье</h4>
                                                                     <p>колбаса докторская, картофель, яйцо, зеленый горошек, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>75р</h4></div>
+                                                                <div class="specials-round"><h4>79р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Остренький</h4>
                                                                     <p>ветчина, шампиньоны жареные, капуста пекинская, огурцы свежие, перец острый маринованный, корейская морковь,
@@ -3564,7 +3559,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>75р</h4></div>
+                                                                <div class="specials-round"><h4>72р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Свеженький </h4>
                                                                     <p>огурец свежий, капуста пекинская, ветчина, перец болгарский, фасоль консервированная, заправка майонез с
@@ -3572,14 +3567,14 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>67р</h4></div>
+                                                                <div class="specials-round"><h4>70р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Фасолька</h4>
                                                                     <p>фасоль консервированная, ветчина, корейская морковь, огурец свежий, заправка майонез</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>82р</h4></div>
+                                                                <div class="specials-round"><h4>86р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Экзотический</h4>
                                                                     <p>ветчина, ананасы консервированные, яйцо, сыр, шампиньоны жареные, заправка майонез</p>
@@ -3593,14 +3588,14 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>82р</h4></div>
+                                                                <div class="specials-round"><h4>86р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Колорит</h4>
                                                                     <p>Филе куриное отварное, огурцы свежие, огурцы консервированные, фасоль конс., морковь пассиров.</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>87р</h4></div>
+                                                                <div class="specials-round"><h4>91р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Корейский с курицей</h4>
                                                                     <p>филе куриное, морковь корейская, огурцы консервированные, зеленый горошек, шампиньоны жареные, заправка
@@ -3608,15 +3603,15 @@
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>98р</h4></div>
+                                                                <div class="specials-round"><h4>82р</h4></div>
                                                                 <div class="specials-content">
-                                                                    <h4>Пикадилли </h4>
+                                                                    <h4>Пикадили </h4>
                                                                     <p>филе куриное, помидор свежий, фасоль консервированная, лук, шампиньоны жареные, заправка майонез с
                                                                         чесноком</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>79р</h4></div>
+                                                                <div class="specials-round"><h4>83р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Цезарь</h4>
                                                                     <p>филе куриное, капуста пекинская, помидоры свежие, сыр пармезан, сухари, заправка соус цезарь</p>
@@ -3630,14 +3625,14 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>89р</h4></div>
+                                                                <div class="specials-round"><h4>93р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Греческий</h4>
                                                                     <p>огурцы свежие, помидоры свежие, перец болгарский, лук, маслины, сыр брынза, заправка масло</p>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>49р</h4></div>
+                                                                <div class="specials-round"><h4>51р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Молодецкий </h4>
                                                                     <p>капуста б\к, корейская морковь, огурцы свежие, перец болгарский, заправка масло, соевый соус</p>
@@ -3660,7 +3655,7 @@
                                                                 </div>
                                                                 <div class="toggle-content">
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>139р</h4></div>
+                                                                        <div class="specials-round"><h4>146р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Котлета по-Киевски, 110гр</h4>
                                                                         </div>
@@ -3672,21 +3667,15 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>159р</h4></div>
+                                                                        <div class="specials-round"><h4>167р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Куриное фрикасе </h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>136р</h4></div>
-                                                                        <div class="specials-content one-line-special-content">
-                                                                            <h4>Куриный кармашек с грибами, 100гр</h4>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="clearfix">
-                                                                        <div class="specials-round"><h4>139р</h4></div>
+                                                                        <div class="specials-round"><h4>146р</h4></div>
                                                                         <div class="specials-content">
-                                                                            <h4>Шашлычок из курицы</h4>
+                                                                            <h4>Шашлык куриный</h4>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3738,43 +3727,43 @@
                                                         </div>
                                                         <div class="toggle-content">
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>35р</h4></div>
+                                                                <div class="specials-round"><h4>37р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Капуста тушеная 100 гр</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>60р</h4></div>
+                                                                <div class="specials-round"><h4>63р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Картофель фри, 100 гр.</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>35р</h4></div>
+                                                                <div class="specials-round"><h4>43р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Картофельное пюре</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>85р</h4></div>
+                                                                <div class="specials-round"><h4>89р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Картофельные дольки, 100 гр.</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>55р</h4></div>
+                                                                <div class="specials-round"><h4>58р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Овощная смесь тушеная</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>65р</h4></div>
+                                                                <div class="specials-round"><h4>68р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Овощное рагу, 100 гр.</h4>
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="specials-round"><h4>45р</h4></div>
+                                                                <div class="specials-round"><h4>47р</h4></div>
                                                                 <div class="specials-content">
                                                                     <h4>Рис с овощами, 100гр</h4>
                                                                 </div>
@@ -3795,13 +3784,19 @@
                                                             </div>
                                                             <div class="toggle-content">
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>370р</h4></div>
+                                                                    <div class="specials-round"><h4>355р</h4></div>
+                                                                    <div class="specials-content">
+                                                                        <h4>Пирог с яблоками 1кг</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="clearfix">
+                                                                    <div class="specials-round"><h4>390р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Пирог с вишней 1кг</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>370р</h4></div>
+                                                                    <div class="specials-round"><h4>385р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Пирог с вишней и яблоками 1кг</h4>
                                                                     </div>
@@ -3810,12 +3805,6 @@
                                                                     <div class="specials-round"><h4>325р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Пирог с курагой 1кг</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clearfix">
-                                                                    <div class="specials-round"><h4>350р</h4></div>
-                                                                    <div class="specials-content">
-                                                                        <h4>Пирог с яблоками 1кг</h4>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -3854,9 +3843,9 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>368р</h4></div>
+                                                                    <div class="specials-round"><h4>430р</h4></div>
                                                                     <div class="specials-content">
-                                                                        <h4>Пирог с рисом и семгой 1кг</h4>
+                                                                        <h4>Пирог с рисом и сёмгой 1кг</h4>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -3887,7 +3876,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>53р</h4></div>
+                                                                    <div class="specials-round"><h4>60р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Сельдь с луком, 40гр</h4>
                                                                     </div>
@@ -3899,13 +3888,13 @@
                                                             </div>
                                                             <div class="toggle-content">
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>49р</h4></div>
+                                                                    <div class="specials-round"><h4>51р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Винегрет, 100гр</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>49р</h4></div>
+                                                                    <div class="specials-round"><h4>51р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Капустный, 100гр</h4>
                                                                     </div>
@@ -3959,49 +3948,49 @@
                                                             </div>
                                                             <div class="toggle-content">
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>80р</h4></div>
+                                                                    <div class="specials-round"><h4>87р</h4></div>
                                                                     <div class="specials-content">
-                                                                        <h4>Биточки куриные</h4>
+                                                                        <h4>Куриные биточки</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>179р</h4></div>
+                                                                    <div class="specials-round"><h4>188р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Жаркое из говядины</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>125р</h4></div>
+                                                                    <div class="specials-round"><h4>140р</h4></div>
                                                                     <div class="specials-content">
-                                                                        <h4>Картофель тушеный со свининой</h4>
+                                                                        <h4>Картофель тушенный с мясом</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>85р</h4></div>
+                                                                    <div class="specials-round"><h4>89р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Котлета куриная</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>119р</h4></div>
+                                                                    <div class="specials-round"><h4>125р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Котлета оригинальная</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>119р</h4></div>
+                                                                    <div class="specials-round"><h4>125р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Котлеты по-домашнему</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>129р</h4></div>
+                                                                    <div class="specials-round"><h4>135р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Рыба жареная</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>89р</h4></div>
+                                                                    <div class="specials-round"><h4>93р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Рыбные котлеты</h4>
                                                                     </div>
@@ -4015,25 +4004,25 @@
                                                                 <p class="weight">Цена за 100 грамм</p>
 
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>30р</h4></div>
+                                                                    <div class="specials-round"><h4>32р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Гороховое пюре</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>35р</h4></div>
+                                                                    <div class="specials-round"><h4>37р</h4></div>
                                                                     <div class="specials-content">
-                                                                        <h4>Гречка</h4>
+                                                                        <h4>Гречка отварная</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>65р</h4></div>
+                                                                    <div class="specials-round"><h4>68р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Капуста тушеная с грибами, 100гр</h4>
                                                                     </div>
                                                                 </div>
                                                                 <div class="clearfix">
-                                                                    <div class="specials-round"><h4>35р</h4></div>
+                                                                    <div class="specials-round"><h4>43р</h4></div>
                                                                     <div class="specials-content">
                                                                         <h4>Картофельное пюре</h4>
                                                                     </div>
@@ -4049,13 +4038,19 @@
                                                                 </div>
                                                                 <div class="toggle-content">
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>370р</h4></div>
+                                                                        <div class="specials-round"><h4>355р</h4></div>
+                                                                        <div class="specials-content">
+                                                                            <h4>Пирог с яблоками 1кг</h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix">
+                                                                        <div class="specials-round"><h4>390р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Пирог с вишней 1кг</h4>
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>370р</h4></div>
+                                                                        <div class="specials-round"><h4>385р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Пирог с вишней и яблоками 1кг</h4>
                                                                         </div>
@@ -4064,12 +4059,6 @@
                                                                         <div class="specials-round"><h4>325р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Пирог с курагой 1кг</h4>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="clearfix">
-                                                                        <div class="specials-round"><h4>350р</h4></div>
-                                                                        <div class="specials-content">
-                                                                            <h4>Пирог с яблоками 1кг</h4>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4108,7 +4097,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="clearfix">
-                                                                        <div class="specials-round"><h4>368р</h4></div>
+                                                                        <div class="specials-round"><h4>430р</h4></div>
                                                                         <div class="specials-content">
                                                                             <h4>Пирог с рисом и семгой 1кг</h4>
                                                                         </div>
@@ -4672,10 +4661,10 @@
                                     <div class="col-md-12">
                                         <p class="row">Требуются сотрудники:</p>
                                         <ul class="no_padding pluses">
-                                            <li class="list_icon font_size_18">Повар, з/п от 27300р</li>
-                                            <li class="list_icon font_size_18">Работник на линию раздачи, з/п от 19000р</li>
-                                            <li class="list_icon font_size_18">Официант, з/п от 80р/час</li>
-                                            <li class="list_icon font_size_18">Посудомойщица-уборщица, з/п от 14700р
+                                            <li class="list_icon font_size_18">Повар, з/п от 30000р</li>
+                                            <li class="list_icon font_size_18">Работник на линию раздачи, з/п от 25000р</li>
+                                            <li class="list_icon font_size_18">Официант, з/п от 100р/час</li>
+                                            <li class="list_icon font_size_18">Посудомойщица-уборщица, з/п от 18000р
                                             </li>
                                         </ul>
                                     </div>
@@ -4797,7 +4786,8 @@
 
         <div id="contact" class="item">
             <div class="content">
-                <div id="map_canvas" class="fullBg"></div>
+                <div id="mapid" class="fullBg"></div>
+
                 <div class="content_overlay"></div>
                 <div class="content_inner">
                     <div class="row contentscroll">
@@ -5047,6 +5037,34 @@
 
     </div>
 
+    <script>
+
+        var latlng = L.latLng(53.190299, 50.115595);
+
+        var mymap = L.map('mapid', {
+            zoomControl: false
+        }).setView([53.190299, 50.115595], 14);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 20,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+
+        L.control.zoom({
+            position: 'bottomleft'
+        }).addTo(mymap);
+
+        var marker = L.marker([53.189923, 50.09035]).addTo(mymap);
+
+        $(".mapone" ).click(function() {
+            mymap.setView([53.190299, 50.115595], 14);
+        });
+
+    </script>
     <!-- // Contact
 =============================-->
 </div>
@@ -5064,7 +5082,7 @@
 <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.fitvids.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK1D0E3M22mxNgrJCl0PIoeObJM1yevho&amp;sensor=false&amp;extension=.js"></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-FoGscJVpiDXXekt572wZJ8X83R4oFAA&amp;sensor=false&amp;extension=.js"></script>-->
 <!--<script src="assets/js/google-map-api.js"></script>-->
 
 
@@ -5137,7 +5155,6 @@
 
 <!-- Custom Scripts -->
 <!--<script type="text/javascript" src="assets/js/custom_general_box.js"></script>-->
-<script type="text/javascript" src="assets/js/google-map-custom.js?version=2"></script>
 <script type="text/javascript" src="assets/js/vegas/vegas.js"></script>
 <script type="text/javascript" src="assets/js/custom_general.js?version=4"></script>
 <script type="text/javascript" src="assets/js/vegas_blinari.js"></script>
