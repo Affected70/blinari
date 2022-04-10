@@ -4815,6 +4815,34 @@ a.public_instagramm:hover {
     font-size: 20px;
     color: #f32a2a;
 }
+.bi-telegram {
+    vertical-align: bottom;
+}
+
+a.telegram {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #545454;
+    text-transform: uppercase;
+    margin-left: 7px;
+}
+
+a.telegram:hover {
+    text-decoration: none;
+    color: #0095cc;
+}
+
+.telegram i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #f32a2a;
+}
+
+.telegram-margin {
+    margin-top: 5px;
+}
 
 .blinari_mail
 {
